@@ -1,0 +1,73 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pym
+*.pymc
+
+# Virtual environments
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Conda environment
+*.conda
+*.ipynb_checkpoints
+
+# Project artifacts
+config/experiments/*.json
+results/
+results_summary/
+tmp_dashboard_summaries/
+player.log
+summaries/
+
+# Data (ignore everything in data/)
+data/
+
+# Frontend artifacts
+src/web/node_modules/
+src/web/dist/
+src/web/.vite/
+src/web/.svelte-kit/
+src/web/legacy/
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.*
+*.env
+
+# Editors / OS / temp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Notes
+notes
