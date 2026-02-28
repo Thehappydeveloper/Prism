@@ -121,21 +121,29 @@ For contribution terms, see [CONTRIBUTING.md](CONTRIBUTING.md) and [CLA.md](CLA.
 
 If you use Prism in academic work, cite:
 
-Jeremy Ouellette and Abdelhak Bentaleb. 2026. Prism: A Trace-Driven Simulator for Component-Aware Adaptive Streaming of V3C Content. In *ACM Multimedia Systems Conference 2026 (MMSys '26)*, April 4-8, 2026, Hong Kong, Hong Kong. ACM, New York, NY, USA, 6 pages. https://doi.org/10.1145/3793853.3799810
+```text
+Jérémy Ouellette and Abdelhak Bentaleb. 2026.
+Prism: A Trace-Driven Simulator for Component-Aware Adaptive Streaming of V3C Content.
+In Proceedings of the 17th ACM Multimedia Systems Conference (MMSys ’26),
+Hong Kong, Hong Kong. Association for Computing Machinery,
+New York, NY, USA, 6 pages.
+https://doi.org/10.1145/3793853.3799810
+```
 
 Copy-paste BibTeX:
 
 ```bibtex
-@inproceedings{ouellette2026prism,
-  author    = {Ouellette, J{\'e}r{\'e}my and Bentaleb, Abdelhak},
-  title     = {Prism: A Trace-Driven Simulator for Component-Aware Adaptive Streaming of V3C Content},
-  booktitle = {Proceedings of the ACM Multimedia Systems Conference 2026 (MMSys '26)},
-  year      = {2026},
-  address   = {Hong Kong, Hong Kong},
-  publisher = {ACM},
-  location  = {New York, NY, USA},
-  pages     = {1--6},
-  doi       = {10.1145/3793853.3799810},
-  url       = {https://doi.org/10.1145/3793853.3799810}
+@inproceedings{prism,
+  author = {Ouellette, J{\'e}r{\'e}my and Bentaleb, Abdelhak},
+  title = {Prism: A Trace-Driven Simulator for Component-Aware Adaptive Streaming of V3C Content},
+  year = {2026},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3793853.3799810},
+  doi = {10.1145/3793853.3799810},
+  booktitle = {Proceedings of the 17th ACM Multimedia Systems Conference},
+  numpages = {6},
+  location = {Hong Kong, Hong Kong},
+  series = {MMSys '26}
 }
 ```
