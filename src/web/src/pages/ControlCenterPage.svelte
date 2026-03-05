@@ -40,7 +40,7 @@
   let selectedRunConfig: RunConfig | null = null;
   let selectedRunEvents: EventLog | null = null;
 
-  let qoeModels: QoEModel[] = [];
+  let qoeModels: QoEModel[] = normalizeQoeModels(undefined);
   let qoeState: QoEState = { selectedId: '', paramsById: {} };
   let showQoeControls = false;
 

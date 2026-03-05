@@ -56,29 +56,30 @@
       <label class="pill-toggle"><input type="checkbox" bind:checked={showBitrate} on:change={onRefreshCharts} /> Bitrate</label>
       <label class="pill-toggle"><input type="checkbox" bind:checked={showBuffer} on:change={onRefreshCharts} /> Buffer</label>
       <label class="pill-toggle"><input type="checkbox" bind:checked={showQoe} on:change={onRefreshCharts} /> QoE</label>
-      <button class="ghost small" on:click={onToggleTailMode}>
+      <button type="button" class="ghost small" on:click={onToggleTailMode}>
         X-axis: {tailMode === 'drain' ? 'buffer drains' : 'stop at last segment'}
       </button>
       {#if compareMode}
-        <button class="ghost small" on:click={onExitCompareMode}>Exit compare</button>
+        <button type="button" class="ghost small" on:click={onExitCompareMode}>Exit compare</button>
       {/if}
     </div>
   </div>
 
   <div class="qoe-toggle-row">
-    <button class="ghost small" on:click={onToggleQoeControlsPanel}>
+    <button type="button" class="ghost small" on:click={onToggleQoeControlsPanel}>
       {showQoeControls ? 'Hide QoE controls' : 'Show QoE controls'}
     </button>
   </div>
 
-  {#if showQoeControls && qoeModels.length}
+  {#if showQoeControls}
     {@const model = activeQoeModel}
     {#if model}
+      {@const modelOptions = qoeModels.length ? qoeModels : [model]}
       <div class="qoe-controls">
         <div class="qoe-head">
           <label>QoE function
             <select value={qoeState.selectedId} on:change={onQoeModelSelectChange}>
-              {#each qoeModels as m}
+              {#each modelOptions as m}
                 <option value={m.id}>{m.label}</option>
               {/each}
             </select>
@@ -100,9 +101,13 @@
           {/each}
         </div>
         <div class="qoe-actions">
-          <button class="ghost small" on:click={onApplyQoeToChart}>Apply QoE params</button>
-          <button class="ghost small" on:click={onResetQoeForChart}>Reset QoE params</button>
+          <button type="button" class="ghost small" on:click={onApplyQoeToChart}>Apply QoE params</button>
+          <button type="button" class="ghost small" on:click={onResetQoeForChart}>Reset QoE params</button>
         </div>
+      </div>
+    {:else}
+      <div class="qoe-controls">
+        <p class="subtle">Loading QoE models…</p>
       </div>
     {/if}
   {/if}

@@ -2,7 +2,13 @@ import shutil
 import subprocess
 from pathlib import Path
 import pandas as pd
-from utils.utils import safe_remove_dir
+
+try:
+    # Imported as part of the `scripts` package (e.g., from src/server.py)
+    from .utils.utils import safe_remove_dir
+except ImportError:
+    # Executed directly: `python src/scripts/get_network_traces.py`
+    from utils.utils import safe_remove_dir
 
 
 def convert_traces_to_csv(target_dir: Path):
