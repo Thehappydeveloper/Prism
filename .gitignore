@@ -1,0 +1,122 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pym
+*.pymc
+
+# Virtual environments
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Conda environment
+*.conda
+*.ipynb_checkpoints
+
+# Project artifacts
+config/experiments/*.json
+# Keep only the two exported learned baselines used by the paper.  All other
+# run artifacts, checkpoints, and training outputs remain local.
+results/*
+!results/training/
+results/training/*
+!results/training/models/
+results/training/models/*
+!results/training/models/model_260723_171401_5ca2/
+!results/training/models/model_260723_171401_5ca2/metadata.json
+!results/training/models/model_260723_171401_5ca2/model.pt
+!results/training/models/model_260723_171707_8df3/
+!results/training/models/model_260723_171707_8df3/metadata.json
+!results/training/models/model_260723_171707_8df3/model.pt
+results_summary/
+tmp_dashboard_summaries/
+player.log
+summaries/
+*.sqlite
+*.sqlite-journal
+
+# Local Prism UI/runtime settings and caches
+.prism_settings/
+.prism_cache/
+
+# Frozen report builds are regenerable from run artifacts.  Curated paper
+# figures and tables should live outside this timestamped build directory.
+docs/argus_mmsys2027/generated/
+
+# Data (ignore everything in data/)
+data/
+
+# Frontend artifacts
+src/web/node_modules/
+src/web/dist/
+src/web/.vite/
+src/web/.svelte-kit/
+src/web/legacy/
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyright/
+.tox/
+.nox/
+__pypackages__/
+.cache/
+.direnv/
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.*
+*.env
+!.env.example
+
+# Local assistant, cloud, and machine state
+.aws/
+.agents/
+.codex/
+.codex
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+.~lock.*
+~$*
+
+# LaTeX build intermediates (not manuscript sources or curated final figures)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+
+# Notes
+notes

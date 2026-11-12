@@ -1,0 +1,64 @@
+{
+  "run_id": "run_261028_124234_33f191e6",
+  "status": "finished",
+  "error": null,
+  "cancel_requested": false,
+  "navis_export": null,
+  "fov_comparison": {
+    "data_path": null,
+    "video_path": null
+  },
+  "queued_at": "2026-10-28T12:42:34.215063",
+  "started": "2026-10-28T12:42:34.506032",
+  "finished": "2026-10-28T12:47:27.976081",
+  "attempt": 1,
+  "events_path": "/api/runs/run_261028_124234_33f191e6/events",
+  "log_path": "/results/run_261028_124234_33f191e6/run_261028_124234_33f191e6.log",
+  "predictor_diagnostics_path": "/results/run_261028_124234_33f191e6/predictor_diagnostics.json",
+  "artifact_fingerprint": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_261028_124234_33f191e6/config.json",
+      "mtime_ns": 1793205755926697199,
+      "size": 2221
+    },
+    "status.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_261028_124234_33f191e6/status.json",
+      "mtime_ns": 1793206047516213698,
+      "size": 1987
+    },
+    "events.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_261028_124234_33f191e6/events.json.gz",
+      "mtime_ns": 1793206047950210311,
+      "size": 627771
+    }
+  },
+  "config_summary": {
+    "abr": "RankBudgetABR",
+    "predictor": "TrainedFovPredictor",
+    "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+    "network_profile": "paper_wifi_118",
+    "network_trace": "",
+    "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv",
+    "ground_truth_mode": "visible_fraction",
+    "oracle_mode": "none"
+  },
+  "progress": {
+    "current": 18,
+    "total": 18,
+    "group_id": "group_run_261028_124234_fce1fbc8",
+    "group_size": 5,
+    "phase": "finishing_outputs",
+    "detail": {
+      "segment_idx": 18,
+      "segment_total": 18
+    },
+    "phase_started_at": "2026-10-28T12:47:27.037127",
+    "heartbeat_at": "2026-10-28T12:47:27.491530"
+  },
+  "oracle_mode": "none",
+  "oracle_group_id": null,
+  "baseline_run_id": null,
+  "run_group_id": "rankbudget_118mbps_visualcomparison_mvscen9i",
+  "run_group_name": "RankBudget_118Mbps_VisualComparison",
+  "run_group_source": "batch_plan"
+}

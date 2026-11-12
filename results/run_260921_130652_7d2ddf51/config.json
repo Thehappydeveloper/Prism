@@ -1,0 +1,50 @@
+{
+  "mpd": "/mnt/storage/v3c_content/s15/s15.mpd",
+  "content_dir": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+  "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247916144751/fov_trace.csv",
+  "network_trace": null,
+  "network_profile": "great_wifi",
+  "dataset_id": "s15",
+  "abr": "RankBudgetABR",
+  "predictor": "LinearExtrapolationPredictor",
+  "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+  "abr_params": {
+    "safety_factor": 0.7
+  },
+  "predictor_params": {
+    "lookback_s": 2
+  },
+  "bandwidth_predictor_params": {},
+  "abr_preset_name": "paper_conservative",
+  "predictor_preset_name": "linear_2s",
+  "bandwidth_predictor_preset_name": null,
+  "headset_preset": "meta_quest_3",
+  "fov_h_deg": 110.0,
+  "fov_v_deg": 96.0,
+  "angle_convention": "unity_zxy",
+  "rtt": 0.06,
+  "block_size_bits": 250000,
+  "enable_fov_upgrades": false,
+  "enable_mid_download_cancel": false,
+  "buffer_window_segments": 2,
+  "buffer_unbounded": false,
+  "segment_limit": 0,
+  "show_progress": false,
+  "output_dir": "/home/jeremy/Documents/python_workspace/prism/src/../results",
+  "run_id": "run_260921_130652_7d2ddf51",
+  "record_fov_stage_latency": true,
+  "ground_truth_mode": "visible_fraction",
+  "ground_truth_visible_threshold": 0.01,
+  "ground_truth_peak_weight": 0.3,
+  "motion_limits": {
+    "max_speed": 3.6391,
+    "max_acceleration": 6.268
+  },
+  "oracle_mode": "none",
+  "oracle_group_id": null,
+  "baseline_run_id": null,
+  "run_group_id": "paper_baselines_rankbudget_great_wifi_mrzhl5gv",
+  "run_group_name": "Paper_Baselines_RankBudget_great_wifi",
+  "run_group_source": "batch_plan",
+  "segment_workers_override": 1
+}

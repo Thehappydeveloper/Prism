@@ -1,0 +1,250 @@
+{
+  "enabled": true,
+  "predictor_name": "LinearExtrapolationPredictor",
+  "prediction_count": 16,
+  "total": {
+    "count": 16,
+    "median_ms": 1016.52,
+    "mean_ms": 1271.441,
+    "p95_ms": 2226.957,
+    "max_ms": 2701.889
+  },
+  "stages": [
+    {
+      "name": "aggregate_tiles",
+      "count": 16,
+      "median_ms": 827.62,
+      "mean_ms": 1031.832,
+      "p95_ms": 1814.474,
+      "max_ms": 2234.872
+    },
+    {
+      "name": "extrapolate_forward",
+      "count": 16,
+      "median_ms": 1.945,
+      "mean_ms": 1.853,
+      "p95_ms": 2.288,
+      "max_ms": 2.381
+    },
+    {
+      "name": "history_lookup",
+      "count": 16,
+      "median_ms": 7.131,
+      "mean_ms": 7.68,
+      "p95_ms": 10.208,
+      "max_ms": 13.131
+    },
+    {
+      "name": "points_in_fov",
+      "count": 16,
+      "median_ms": 129.593,
+      "mean_ms": 166.209,
+      "p95_ms": 282.298,
+      "max_ms": 312.211
+    },
+    {
+      "name": "read_point_cloud",
+      "count": 16,
+      "median_ms": 48.609,
+      "mean_ms": 63.825,
+      "p95_ms": 130.344,
+      "max_ms": 148.102
+    }
+  ],
+  "metadata_summary": {
+    "frame_count": {
+      "count": 16,
+      "min": 1.0,
+      "median": 1.0,
+      "mean": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "frame_rate_hz": {
+      "count": 16,
+      "min": 30.0,
+      "median": 30.0,
+      "mean": 30.0,
+      "p95": 30.0,
+      "max": 30.0
+    },
+    "lookback_frames": {
+      "count": 16,
+      "min": 60.0,
+      "median": 60.0,
+      "mean": 60.0,
+      "p95": 60.0,
+      "max": 60.0
+    },
+    "lookback_s": {
+      "count": 16,
+      "min": 2.0,
+      "median": 2.0,
+      "mean": 2.0,
+      "p95": 2.0,
+      "max": 2.0
+    },
+    "observed_frame_idx": {
+      "count": 16,
+      "min": 150.0,
+      "median": 1275.0,
+      "mean": 1275.0,
+      "p95": 2287.5,
+      "max": 2400.0
+    },
+    "tile_count": {
+      "count": 16,
+      "min": 124.0,
+      "median": 124.0,
+      "mean": 124.0,
+      "p95": 124.0,
+      "max": 124.0
+    }
+  },
+  "metadata_samples": [
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 150
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 300
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 450
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 600
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 750
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 900
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1050
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1200
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1350
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1500
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1650
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1800
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 1950
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 2100
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 2250
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "lookback_s": 2.0,
+      "lookback_frames": 60,
+      "frame_rate_hz": 30.0,
+      "legacy_frame_lookback": false,
+      "observed_frame_idx": 2400
+    }
+  ]
+}

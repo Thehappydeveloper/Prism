@@ -1,0 +1,183 @@
+{
+  "schema": "prism.run-manifest.v1",
+  "run_id": "run_261028_124234_fce1fbc8",
+  "state": "complete",
+  "completed_at": "2026-10-28T16:47:21.908109+00:00",
+  "source": {
+    "revision": "23a3003ec28db7ebe156de20dd734cc8b6c2028d",
+    "dirty": "unverified"
+  },
+  "inputs": {
+    "dataset_id": "s15",
+    "mpd": {
+      "path": "/mnt/storage/v3c_content/s15/s15.mpd",
+      "size_bytes": 2249230,
+      "mtime_ns": 1783442105210400590,
+      "sha256": "8592b362843329359ccd8549b87a7418f98b085e56efd284418df5324223f161"
+    },
+    "content": {
+      "path": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+      "frame_count": 2700,
+      "first_frame": 1
+    },
+    "timeline": {
+      "duration_s": 90.0,
+      "segment_count": 18,
+      "frame_rate_hz": 30.0
+    },
+    "fov_trace": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv",
+      "size_bytes": 4747894,
+      "mtime_ns": 1783448114554972730,
+      "sha256": "833e829a93c2a06aff5902a12358687a8c570a24c6e79aec7fe8a28ef1b31d7f"
+    },
+    "network_trace": null,
+    "network_profile": "paper_wifi_118"
+  },
+  "configuration": {
+    "requested": {
+      "mpd": "/mnt/storage/v3c_content/s15/s15.mpd",
+      "content_dir": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+      "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv",
+      "network_trace": null,
+      "network_profile": "paper_wifi_118",
+      "dataset_id": "s15",
+      "abr": "RankBudgetABR",
+      "predictor": "LastObservedFovPredictor",
+      "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+      "abr_params": {
+        "safety_factor": 1
+      },
+      "predictor_params": {},
+      "bandwidth_predictor_params": {},
+      "abr_preset_name": "perfect_bandwidth",
+      "predictor_preset_name": null,
+      "bandwidth_predictor_preset_name": null,
+      "headset_preset": "meta_quest_3",
+      "fov_h_deg": 110.0,
+      "fov_v_deg": 96.0,
+      "angle_convention": "unity_zxy",
+      "rtt": 0.06,
+      "block_size_bits": 250000,
+      "enable_fov_upgrades": false,
+      "enable_mid_download_cancel": false,
+      "buffer_window_segments": 2,
+      "buffer_unbounded": false,
+      "segment_limit": 0,
+      "show_progress": false,
+      "output_dir": "/home/jeremy/Documents/python_workspace/prism/src/../results",
+      "run_id": "run_261028_124234_fce1fbc8",
+      "record_fov_stage_latency": true,
+      "ground_truth_mode": "visible_fraction",
+      "ground_truth_visible_threshold": 0.01,
+      "ground_truth_peak_weight": 0.3,
+      "motion_limits": {
+        "max_speed": 3.6391,
+        "max_acceleration": 6.268
+      },
+      "oracle_mode": "none",
+      "oracle_group_id": null,
+      "baseline_run_id": null,
+      "run_group_id": "rankbudget_118mbps_visualcomparison_mvscen9i",
+      "run_group_name": "RankBudget_118Mbps_VisualComparison",
+      "run_group_source": "batch_plan",
+      "experiment_id": "rankbudget_118mbps_visualcomparison",
+      "experiment_name": "RankBudget_118Mbps_VisualComparison",
+      "experiment_purpose": null,
+      "experiment_kind": "exploration",
+      "experiment_primary_metrics": [
+        "qoe",
+        "weighted_iou",
+        "catastrophic_miss_rate"
+      ],
+      "analysis_qoe_function": "VisiblePlaybackUtility",
+      "analysis_qoe_scoring_version": "mpd_stable_visible_utility_v1",
+      "segment_workers_override": 1
+    },
+    "resolved": {
+      "mpd": "/mnt/storage/v3c_content/s15/s15.mpd",
+      "content_dir": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+      "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv",
+      "network_trace": null,
+      "network_profile": "paper_wifi_118",
+      "dataset_id": "s15",
+      "abr": "RankBudgetABR",
+      "predictor": "LastObservedFovPredictor",
+      "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+      "abr_params": {
+        "safety_factor": 1
+      },
+      "predictor_params": {},
+      "bandwidth_predictor_params": {},
+      "abr_preset_name": "perfect_bandwidth",
+      "predictor_preset_name": null,
+      "bandwidth_predictor_preset_name": null,
+      "headset_preset": "meta_quest_3",
+      "fov_h_deg": 110.0,
+      "fov_v_deg": 96.0,
+      "angle_convention": "unity_zxy",
+      "rtt": 0.06,
+      "block_size_bits": 250000,
+      "enable_fov_upgrades": false,
+      "enable_mid_download_cancel": false,
+      "buffer_window_segments": 2,
+      "buffer_unbounded": false,
+      "segment_limit": 0,
+      "show_progress": false,
+      "output_dir": "/home/jeremy/Documents/python_workspace/prism/src/../results",
+      "run_id": "run_261028_124234_fce1fbc8",
+      "record_fov_stage_latency": true,
+      "ground_truth_mode": "visible_fraction",
+      "ground_truth_visible_threshold": 0.01,
+      "ground_truth_peak_weight": 0.3,
+      "motion_limits": {
+        "max_speed": 3.6391,
+        "max_acceleration": 6.268
+      },
+      "oracle_mode": "none",
+      "oracle_group_id": null,
+      "baseline_run_id": null,
+      "run_group_id": "rankbudget_118mbps_visualcomparison_mvscen9i",
+      "run_group_name": "RankBudget_118Mbps_VisualComparison",
+      "run_group_source": "batch_plan",
+      "experiment_id": "rankbudget_118mbps_visualcomparison",
+      "experiment_name": "RankBudget_118Mbps_VisualComparison",
+      "experiment_purpose": null,
+      "experiment_kind": "exploration",
+      "experiment_primary_metrics": [
+        "qoe",
+        "weighted_iou",
+        "catastrophic_miss_rate"
+      ],
+      "analysis_qoe_function": "VisiblePlaybackUtility",
+      "analysis_qoe_scoring_version": "mpd_stable_visible_utility_v1",
+      "segment_workers_override": 1
+    }
+  },
+  "artifacts": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261028_124234_fce1fbc8/config.json",
+      "size_bytes": 2154,
+      "mtime_ns": 1793205754725030382,
+      "sha256": "51de426d9c969c9a9fcef4a91528a844170b2259a0e55447723fb467e8c56c47"
+    },
+    "events.json.gz": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261028_124234_fce1fbc8/events.json.gz",
+      "size_bytes": 628715,
+      "mtime_ns": 1793206041896257224,
+      "sha256": "1f40999df4e41ddacd1e1b4f1b74ca5a958d811ef638c75702e7eb1a6f1da9bb"
+    },
+    "predictor_diagnostics.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261028_124234_fce1fbc8/predictor_diagnostics.json",
+      "size_bytes": 3337,
+      "mtime_ns": 1793206041906678428,
+      "sha256": "4988091975115509155ede3b582fd3f4e7f4e3b90372a9f3b57fa45ce59f7eb7"
+    },
+    "timing.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261028_124234_fce1fbc8/timing.json",
+      "size_bytes": 5299,
+      "mtime_ns": 1793206041906889071,
+      "sha256": "3f3e057ecd67e9a5991b5bd95207592e14bd61211a748c07cb27fd31e73e50ab"
+    }
+  }
+}

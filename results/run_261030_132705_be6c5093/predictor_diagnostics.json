@@ -1,0 +1,162 @@
+{
+  "enabled": true,
+  "predictor_name": "LastObservedFovPredictor",
+  "prediction_count": 16,
+  "total": {
+    "count": 16,
+    "median_ms": 1376.656,
+    "mean_ms": 2630.047,
+    "p95_ms": 6919.339,
+    "max_ms": 18165.058
+  },
+  "stages": [
+    {
+      "name": "frame_lookup",
+      "count": 16,
+      "median_ms": 6.564,
+      "mean_ms": 7.565,
+      "p95_ms": 11.895,
+      "max_ms": 12.843
+    },
+    {
+      "name": "predict_from_observed_pose",
+      "count": 16,
+      "median_ms": 1368.703,
+      "mean_ms": 2622.469,
+      "p95_ms": 6909.023,
+      "max_ms": 18158.579
+    }
+  ],
+  "metadata_summary": {
+    "frame_count": {
+      "count": 16,
+      "min": 1.0,
+      "median": 1.0,
+      "mean": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "observed_frame_idx": {
+      "count": 16,
+      "min": 150.0,
+      "median": 1275.0,
+      "mean": 1275.0,
+      "p95": 2287.5,
+      "max": 2400.0
+    },
+    "prediction_horizon_s": {
+      "count": 16,
+      "min": 10.0,
+      "median": 10.0,
+      "mean": 10.0,
+      "p95": 10.0,
+      "max": 10.0
+    },
+    "tile_count": {
+      "count": 16,
+      "min": 124.0,
+      "median": 124.0,
+      "mean": 124.0,
+      "p95": 124.0,
+      "max": 124.0
+    }
+  },
+  "metadata_samples": [
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 150,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 300,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 450,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 600,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 750,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 900,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1050,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1200,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1350,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1500,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1650,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1800,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 1950,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 2100,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 2250,
+      "prediction_horizon_s": 10.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "observed_frame_idx": 2400,
+      "prediction_horizon_s": 10.0
+    }
+  ]
+}

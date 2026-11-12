@@ -1,0 +1,191 @@
+{
+  "schema": "prism.run-manifest.v1",
+  "run_id": "run_261030_132700_254197c9",
+  "state": "complete",
+  "completed_at": "2026-10-31T04:36:52.835076+00:00",
+  "source": {
+    "revision": "23a3003ec28db7ebe156de20dd734cc8b6c2028d",
+    "dirty": "unverified"
+  },
+  "inputs": {
+    "dataset_id": "s15",
+    "mpd": {
+      "path": "/mnt/storage/v3c_content/s15/s15.mpd",
+      "size_bytes": 2249230,
+      "mtime_ns": 1783442105210400590,
+      "sha256": "8592b362843329359ccd8549b87a7418f98b085e56efd284418df5324223f161"
+    },
+    "content": {
+      "path": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+      "frame_count": 2700,
+      "first_frame": 1
+    },
+    "timeline": {
+      "duration_s": 90.0,
+      "segment_count": 18,
+      "frame_rate_hz": 30.0
+    },
+    "fov_trace": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711144742482/fov_trace.csv",
+      "size_bytes": 4748884,
+      "mtime_ns": 1783448114347956570,
+      "sha256": "4768727854f44a63e1adf921da988f4df13fa7e3de6912f16d9e94129737672b"
+    },
+    "network_trace": null,
+    "network_profile": "paper_wifi_74"
+  },
+  "configuration": {
+    "requested": {
+      "mpd": "/mnt/storage/v3c_content/s15/s15.mpd",
+      "content_dir": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+      "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711144742482/fov_trace.csv",
+      "network_trace": null,
+      "network_profile": "paper_wifi_74",
+      "dataset_id": "s15",
+      "abr": "CoverageAwareUtilityABR",
+      "predictor": "LastObservedFovPredictor",
+      "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+      "abr_params": {
+        "safety_factor": 1,
+        "score_power": 0.75,
+        "coverage_strength": 2.5,
+        "fallback_score": 0.025
+      },
+      "predictor_params": {},
+      "bandwidth_predictor_params": {},
+      "abr_preset_name": "cost_aware_coverage",
+      "predictor_preset_name": null,
+      "bandwidth_predictor_preset_name": null,
+      "headset_preset": "meta_quest_3",
+      "fov_h_deg": 110.0,
+      "fov_v_deg": 96.0,
+      "angle_convention": "unity_zxy",
+      "rtt": 0.06,
+      "block_size_bits": 250000,
+      "enable_fov_upgrades": false,
+      "enable_mid_download_cancel": false,
+      "buffer_window_segments": 2,
+      "buffer_unbounded": false,
+      "segment_limit": 0,
+      "show_progress": false,
+      "output_dir": "/home/jeremy/Documents/python_workspace/prism/src/../results",
+      "run_id": "run_261030_132700_254197c9",
+      "record_fov_stage_latency": true,
+      "ground_truth_mode": "visible_fraction",
+      "ground_truth_visible_threshold": 0.01,
+      "ground_truth_peak_weight": 0.3,
+      "motion_limits": {
+        "max_speed": 3.6391,
+        "max_acceleration": 6.268
+      },
+      "oracle_mode": "none",
+      "oracle_group_id": null,
+      "baseline_run_id": null,
+      "run_group_id": "paper_baselines_coverageaware_bandwidthqoe_sixrates_mvv8vhux",
+      "run_group_name": "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates",
+      "run_group_source": "batch_plan",
+      "experiment_id": "paper_baselines_coverageaware_bandwidthqoe_sixrates",
+      "experiment_name": "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates",
+      "experiment_purpose": null,
+      "experiment_kind": "exploration",
+      "experiment_primary_metrics": [
+        "qoe",
+        "weighted_iou",
+        "catastrophic_miss_rate"
+      ],
+      "analysis_qoe_function": "FovAwarePlaybackUtility",
+      "analysis_qoe_scoring_version": "fov_aware_playback_utility_v2",
+      "analysis_qoe_warmup_segments": 2,
+      "segment_workers_override": 1
+    },
+    "resolved": {
+      "mpd": "/mnt/storage/v3c_content/s15/s15.mpd",
+      "content_dir": "/home/jeremy/Documents/datasets/mazelab_S7_S15_fov_traces_with_plys/Experiment_15/GlobalCompletePCDs",
+      "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711144742482/fov_trace.csv",
+      "network_trace": null,
+      "network_profile": "paper_wifi_74",
+      "dataset_id": "s15",
+      "abr": "CoverageAwareUtilityABR",
+      "predictor": "LastObservedFovPredictor",
+      "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+      "abr_params": {
+        "safety_factor": 1,
+        "score_power": 0.75,
+        "coverage_strength": 2.5,
+        "fallback_score": 0.025
+      },
+      "predictor_params": {},
+      "bandwidth_predictor_params": {},
+      "abr_preset_name": "cost_aware_coverage",
+      "predictor_preset_name": null,
+      "bandwidth_predictor_preset_name": null,
+      "headset_preset": "meta_quest_3",
+      "fov_h_deg": 110.0,
+      "fov_v_deg": 96.0,
+      "angle_convention": "unity_zxy",
+      "rtt": 0.06,
+      "block_size_bits": 250000,
+      "enable_fov_upgrades": false,
+      "enable_mid_download_cancel": false,
+      "buffer_window_segments": 2,
+      "buffer_unbounded": false,
+      "segment_limit": 0,
+      "show_progress": false,
+      "output_dir": "/home/jeremy/Documents/python_workspace/prism/src/../results",
+      "run_id": "run_261030_132700_254197c9",
+      "record_fov_stage_latency": true,
+      "ground_truth_mode": "visible_fraction",
+      "ground_truth_visible_threshold": 0.01,
+      "ground_truth_peak_weight": 0.3,
+      "motion_limits": {
+        "max_speed": 3.6391,
+        "max_acceleration": 6.268
+      },
+      "oracle_mode": "none",
+      "oracle_group_id": null,
+      "baseline_run_id": null,
+      "run_group_id": "paper_baselines_coverageaware_bandwidthqoe_sixrates_mvv8vhux",
+      "run_group_name": "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates",
+      "run_group_source": "batch_plan",
+      "experiment_id": "paper_baselines_coverageaware_bandwidthqoe_sixrates",
+      "experiment_name": "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates",
+      "experiment_purpose": null,
+      "experiment_kind": "exploration",
+      "experiment_primary_metrics": [
+        "qoe",
+        "weighted_iou",
+        "catastrophic_miss_rate"
+      ],
+      "analysis_qoe_function": "FovAwarePlaybackUtility",
+      "analysis_qoe_scoring_version": "fov_aware_playback_utility_v2",
+      "analysis_qoe_warmup_segments": 2,
+      "segment_workers_override": 1
+    }
+  },
+  "artifacts": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261030_132700_254197c9/config.json",
+      "size_bytes": 2353,
+      "mtime_ns": 1793405121802797839,
+      "sha256": "0ce43e749d86053a5d5e4324c9495f7509d3a37939fc3edec901d70be2668dd2"
+    },
+    "events.json.gz": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261030_132700_254197c9/events.json.gz",
+      "size_bytes": 629638,
+      "mtime_ns": 1793421412823087434,
+      "sha256": "b355b61a5b2d4ec286eb777202af7998183085b8283f0cfcca790f729dc09ea4"
+    },
+    "predictor_diagnostics.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261030_132700_254197c9/predictor_diagnostics.json",
+      "size_bytes": 3336,
+      "mtime_ns": 1793421412829666579,
+      "sha256": "0ba78cf5512f065e671e95791b68d2d0807a716693210a34bf83dd4018d84b04"
+    },
+    "timing.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/results/run_261030_132700_254197c9/timing.json",
+      "size_bytes": 5310,
+      "mtime_ns": 1793421412830282189,
+      "sha256": "8726c76b749292a440c5c92887606b49aede40a03310946d1e7b4b9b27d0cb97"
+    }
+  }
+}

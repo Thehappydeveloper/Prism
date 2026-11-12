@@ -1,0 +1,16 @@
+{
+  "id": "baseline_bandwidth_qoe",
+  "title": "CoverageAwareUtilityABR FoV-aware playback utility by FoV predictor",
+  "description": "Matched 55, 74, 112, 150, 188, and 225 Mb/s fixed-rate study of FoV-aware delivered playback utility and outcomes for every FoV predictor. The CoverageAwareUtilityABR uses the full oracle bandwidth estimate (safety factor 1.0). FoV-aware playback utility v2 excludes the first two segments as predictor warm-up, prioritizes missing quality in the actual FoV over non-FoV quality waste, and includes persistent-FoV quality stability thereafter.",
+  "inputs": {"group_names": ["Paper_Baselines_CoverageAware_BandwidthQoE_SixRates"], "group_run_counts": {"Paper_Baselines_CoverageAware_BandwidthQoE_SixRates": 1296}},
+  "parent_report": "argus_mmsys2027",
+  "batch_plans": [
+    {"id": "coverage-aware-bandwidth-qoe", "label": "Full CoverageAwareUtilityABR bandwidth QoE sweep (1,296 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_baselines_coverage_aware_utility_abr_bandwidth_qoe.prism-batch-plan.json"}
+  ],
+  "validation": {"expected_run_count": 1296},
+  "metrics": [{"id": "fov_aware_playback_utility", "version": 2, "warmup_segments": 2}],
+  "legacy_renderers": {"table_script": "scripts/report_baseline_bandwidth_qoe.py", "figure_script": "scripts/generate_baseline_bandwidth_qoe_figure.py"},
+  "publication_layout": {"columns": 1, "width_inches": 3.5, "figure_width_px": 860, "reference_font_px": 31},
+  "render_options": {"figure_font_size_pt": {"type": "number", "label": "Final legend/tick font size (pt), at 3.5 in single-column width", "default": 9, "min": 6, "max": 14}},
+  "outputs": ["tables.md", "runs.csv", "report-manifest.json", "figures/baseline_bandwidth_qoe.svg"]
+}

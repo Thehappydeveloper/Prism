@@ -1,0 +1,17 @@
+{
+  "id": "rank_budget_visual_comparison",
+  "title": "RankBudgetABR FoV tile-score visual comparison",
+  "description": "Segments 12 and 14 for the matched 118 Mb/s RankBudgetABR comparison: one side-by-side 1×2 grid of six-panel maps with a point-cloud overlay.",
+  "render_options": {
+    "figure_font_size_pt": {"type": "number", "label": "Final panel-label font size (pt), at 7 in double-column width", "default": 9, "min": 6, "max": 14},
+    "point_cloud_overlay": {"type": "boolean", "label": "Overlay middle-height point-cloud slice", "default": true},
+    "motion_trace_overlay": {"type": "boolean", "label": "Overlay observed and target-segment motion", "default": true}
+  },
+  "publication_layout": {"columns": 2, "width_inches": 7, "figure_width_px": 3472, "reference_font_px": 28},
+  "inputs": {"group_names": ["RankBudget_118Mbps_VisualComparison"], "group_run_counts": {"RankBudget_118Mbps_VisualComparison": 5}},
+  "parent_report": "argus_mmsys2027",
+  "batch_plans": [{"id": "rank-budget-visual-comparison", "label": "RankBudget visual comparison (5 runs)", "path": "docs/argus_mmsys2027/batch-plans/rank_budget_118mbps_visual_comparison.prism-batch-plan.json"}],
+  "validation": {"expected_run_count": 5},
+  "legacy_renderers": {"table_script": "scripts/report_fov_round_robin_visual_comparison.py", "figure_script": "scripts/generate_fov_round_robin_visual_comparison_figures.py"},
+  "outputs": ["tables.md", "runs.csv", "report-manifest.json"]
+}

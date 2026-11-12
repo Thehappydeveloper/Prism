@@ -1,0 +1,275 @@
+{
+  "enabled": true,
+  "predictor_name": "TrainedFovPredictor",
+  "prediction_count": 16,
+  "total": {
+    "count": 16,
+    "median_ms": 1306.853,
+    "mean_ms": 1741.442,
+    "p95_ms": 3682.303,
+    "max_ms": 5885.996
+  },
+  "stages": [
+    {
+      "name": "aggregate_tiles",
+      "count": 15,
+      "median_ms": 846.598,
+      "mean_ms": 1121.557,
+      "p95_ms": 2232.671,
+      "max_ms": 2278.32
+    },
+    {
+      "name": "history",
+      "count": 16,
+      "median_ms": 10.109,
+      "mean_ms": 9.988,
+      "p95_ms": 15.666,
+      "max_ms": 16.943
+    },
+    {
+      "name": "model",
+      "count": 15,
+      "median_ms": 0.959,
+      "mean_ms": 3.101,
+      "p95_ms": 10.966,
+      "max_ms": 28.896
+    },
+    {
+      "name": "points_in_fov",
+      "count": 15,
+      "median_ms": 378.533,
+      "mean_ms": 492.749,
+      "p95_ms": 1179.439,
+      "max_ms": 2692.231
+    },
+    {
+      "name": "read_point_cloud",
+      "count": 15,
+      "median_ms": 61.193,
+      "mean_ms": 137.449,
+      "p95_ms": 427.71,
+      "max_ms": 936.448
+    }
+  ],
+  "metadata_summary": {
+    "anchor_frame": {
+      "count": 16,
+      "min": 150.0,
+      "median": 1275.0,
+      "mean": 1275.0,
+      "p95": 2287.5,
+      "max": 2400.0
+    },
+    "frame_count": {
+      "count": 16,
+      "min": 1.0,
+      "median": 1.0,
+      "mean": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "frame_rate_hz": {
+      "count": 16,
+      "min": 30.0,
+      "median": 30.0,
+      "mean": 30.0,
+      "p95": 30.0,
+      "max": 30.0
+    },
+    "horizon_frames": {
+      "count": 16,
+      "min": 300.0,
+      "median": 300.0,
+      "mean": 300.0,
+      "p95": 300.0,
+      "max": 300.0
+    },
+    "horizon_s": {
+      "count": 16,
+      "min": 10.0,
+      "median": 10.0,
+      "mean": 10.0,
+      "p95": 10.0,
+      "max": 10.0
+    },
+    "target_frame": {
+      "count": 16,
+      "min": 450.0,
+      "median": 1575.0,
+      "mean": 1575.0,
+      "p95": 2587.5,
+      "max": 2700.0
+    },
+    "tile_count": {
+      "count": 16,
+      "min": 124.0,
+      "median": 124.0,
+      "mean": 124.0,
+      "p95": 124.0,
+      "max": 124.0
+    }
+  },
+  "metadata_samples": [
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 150,
+      "target_frame": 450,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0,
+      "fallback": "Not enough FoV history for trained predictor."
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 300,
+      "target_frame": 600,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 450,
+      "target_frame": 750,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 600,
+      "target_frame": 900,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 750,
+      "target_frame": 1050,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 900,
+      "target_frame": 1200,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1050,
+      "target_frame": 1350,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1200,
+      "target_frame": 1500,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1350,
+      "target_frame": 1650,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1500,
+      "target_frame": 1800,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1650,
+      "target_frame": 1950,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1800,
+      "target_frame": 2100,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 1950,
+      "target_frame": 2250,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 2100,
+      "target_frame": 2400,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 2250,
+      "target_frame": 2550,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    },
+    {
+      "tile_count": 124,
+      "frame_count": 1,
+      "model_id": "model_260723_171707_8df3",
+      "anchor_frame": 2400,
+      "target_frame": 2700,
+      "horizon_frames": 300,
+      "horizon_s": 10.0,
+      "frame_rate_hz": 30.0
+    }
+  ]
+}

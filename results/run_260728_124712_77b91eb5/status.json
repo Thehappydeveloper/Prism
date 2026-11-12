@@ -1,0 +1,64 @@
+{
+  "run_id": "run_260728_124712_77b91eb5",
+  "status": "finished",
+  "error": null,
+  "cancel_requested": false,
+  "navis_export": null,
+  "fov_comparison": {
+    "data_path": null,
+    "video_path": null
+  },
+  "queued_at": "2026-07-28T12:47:12.724584",
+  "started": "2026-07-28T14:41:44.763473",
+  "finished": "2026-07-28T16:28:20.202045",
+  "attempt": 1,
+  "events_path": "/api/runs/run_260728_124712_77b91eb5/events",
+  "log_path": "/results/run_260728_124712_77b91eb5/run_260728_124712_77b91eb5.log",
+  "predictor_diagnostics_path": "/results/run_260728_124712_77b91eb5/predictor_diagnostics.json",
+  "artifact_fingerprint": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260728_124712_77b91eb5/config.json",
+      "mtime_ns": 1785264220758638877,
+      "size": 3563
+    },
+    "status.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260728_124712_77b91eb5/status.json",
+      "mtime_ns": 1785270499249227537,
+      "size": 2298
+    },
+    "events.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260728_124712_77b91eb5/events.json.gz",
+      "mtime_ns": 1785270464261551798,
+      "size": 637526
+    }
+  },
+  "config_summary": {
+    "abr": "RankBudgetABR",
+    "predictor": "ReachabilityRaycastPredictor",
+    "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+    "network_profile": "great_wifi",
+    "network_trace": "",
+    "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv",
+    "ground_truth_mode": "visible_fraction",
+    "oracle_mode": "none"
+  },
+  "progress": {
+    "current": 18,
+    "total": 18,
+    "group_id": "group_run_260728_124712_7fdc4287",
+    "group_size": 104,
+    "phase": "finishing_outputs",
+    "detail": {
+      "segment_idx": 18,
+      "segment_total": 18
+    },
+    "phase_started_at": "2026-07-28T16:27:43.367656",
+    "heartbeat_at": "2026-07-28T16:28:18.994340"
+  },
+  "oracle_mode": "none",
+  "oracle_group_id": null,
+  "baseline_run_id": null,
+  "run_group_id": "paper_raycast_ablations_rankbudget_great_wifi_ms4w28nq",
+  "run_group_name": "Paper_Raycast_Ablations_RankBudget_great_wifi",
+  "run_group_source": "batch_plan"
+}

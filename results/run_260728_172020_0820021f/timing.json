@@ -1,0 +1,160 @@
+{
+  "name": "run_260728_172020_0820021f",
+  "started_at": 1785273626.2059574,
+  "finished_at": 1785277223.1440625,
+  "wall_ms": 3596938.1051063538,
+  "stages": {
+    "config.save": {
+      "count": 1,
+      "total_ms": 2.9551249972428195,
+      "min_ms": 2.9551249972428195,
+      "max_ms": 2.9551249972428195,
+      "last_ms": 2.9551249972428195,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f"
+      },
+      "avg_ms": 2.9551249972428195
+    },
+    "instantiate_bandwidth_predictor": {
+      "count": 1,
+      "total_ms": 0.007474001904483885,
+      "min_ms": 0.007474001904483885,
+      "max_ms": 0.007474001904483885,
+      "last_ms": 0.007474001904483885,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f"
+      },
+      "avg_ms": 0.007474001904483885
+    },
+    "network.init": {
+      "count": 1,
+      "total_ms": 0.45735299499938264,
+      "min_ms": 0.45735299499938264,
+      "max_ms": 0.45735299499938264,
+      "last_ms": 0.45735299499938264,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "path": "great_wifi"
+      },
+      "avg_ms": 0.45735299499938264
+    },
+    "instantiate_fov_predictor": {
+      "count": 1,
+      "total_ms": 0.03080700116697699,
+      "min_ms": 0.03080700116697699,
+      "max_ms": 0.03080700116697699,
+      "last_ms": 0.03080700116697699,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f"
+      },
+      "avg_ms": 0.03080700116697699
+    },
+    "fov.init": {
+      "count": 1,
+      "total_ms": 117.37428399646888,
+      "min_ms": 117.37428399646888,
+      "max_ms": 117.37428399646888,
+      "last_ms": 117.37428399646888,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "path": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_2024711163558969/fov_trace.csv"
+      },
+      "avg_ms": 117.37428399646888
+    },
+    "tile_fov.init": {
+      "count": 1,
+      "total_ms": 167.72835900337668,
+      "min_ms": 167.72835900337668,
+      "max_ms": 167.72835900337668,
+      "last_ms": 167.72835900337668,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "path": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_2024711163558969/fov_trace.csv"
+      },
+      "avg_ms": 167.72835900337668
+    },
+    "abr.init": {
+      "count": 1,
+      "total_ms": 0.007363996701315045,
+      "min_ms": 0.007363996701315045,
+      "max_ms": 0.007363996701315045,
+      "last_ms": 0.007363996701315045,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f"
+      },
+      "avg_ms": 0.007363996701315045
+    },
+    "player.wait_for_buffer_space": {
+      "count": 18,
+      "total_ms": 0.8272110062534921,
+      "min_ms": 0.0035669945646077394,
+      "max_ms": 0.06266700074775144,
+      "last_ms": 0.055856995459180325,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "segment_idx": "17"
+      },
+      "avg_ms": 0.045956167014082894
+    },
+    "player.list_segment_tiles": {
+      "count": 18,
+      "total_ms": 0.033124000765383244,
+      "min_ms": 0.001362997863907367,
+      "max_ms": 0.00242499663727358,
+      "last_ms": 0.002024004061240703,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "segment_idx": "17"
+      },
+      "avg_ms": 0.0018402222647435134
+    },
+    "player.abr_decision": {
+      "count": 18,
+      "total_ms": 46668.344611993234,
+      "min_ms": 8.43355999677442,
+      "max_ms": 4004.841347996262,
+      "last_ms": 3851.1373860019376,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "segment_idx": "17"
+      },
+      "avg_ms": 2592.685811777402
+    },
+    "player.ground_truth_fov": {
+      "count": 18,
+      "total_ms": 92.10634201735957,
+      "min_ms": 4.803946001629811,
+      "max_ms": 6.177920004120097,
+      "last_ms": 5.118330998811871,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "segment_idx": "17"
+      },
+      "avg_ms": 5.1170190009644205
+    },
+    "player.perform_download": {
+      "count": 18,
+      "total_ms": 289.003377998597,
+      "min_ms": 4.088235000381246,
+      "max_ms": 48.74297100468539,
+      "last_ms": 10.340410000935663,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f",
+        "segment_idx": "17"
+      },
+      "avg_ms": 16.055743222144276
+    },
+    "outputs.save": {
+      "count": 1,
+      "total_ms": 948.5151010012487,
+      "min_ms": 948.5151010012487,
+      "max_ms": 948.5151010012487,
+      "last_ms": 948.5151010012487,
+      "last_metadata": {
+        "run_id": "run_260728_172020_0820021f"
+      },
+      "avg_ms": 948.5151010012487
+    }
+  },
+  "counters": {}
+}

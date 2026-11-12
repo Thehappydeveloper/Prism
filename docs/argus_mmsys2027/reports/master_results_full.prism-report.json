@@ -1,0 +1,17 @@
+{
+  "id": "master_results_full",
+  "title": "Master results — detailed table",
+  "description": "Consolidated detailed master table: predictors, design ablations, and retained cost/quality sweeps.",
+  "inputs": {"group_names": ["Paper_Baselines_RankBudget_great_wifi", "Paper_Raycast_Ablations_RankBudget_great_wifi", "Paper_Raycast_CostQuality_RankBudget_great_wifi"], "group_run_counts": {"Paper_Baselines_RankBudget_great_wifi": 216, "Paper_Raycast_Ablations_RankBudget_great_wifi": 243, "Paper_Raycast_CostQuality_RankBudget_great_wifi": 324}},
+  "parent_report": "argus_mmsys2027",
+  "batch_plans": [
+    {"id": "baseline-rank-budget", "label": "Full baseline RankBudget sweep (216 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_baselines_rank_budget_great_wifi.prism-batch-plan.json"},
+    {"id": "raycast-design-ablations", "label": "Argus design-ablation sweep (243 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_raycast_ablations_rank_budget_great_wifi.prism-batch-plan.json"},
+    {"id": "raycast-cost-quality", "label": "Argus cost/quality sweeps (324 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_raycast_cost_quality_rank_budget_great_wifi.prism-batch-plan.json"}
+  ],
+  "validation": {
+    "expected_run_count": 783
+  },
+  "legacy_renderers": {"table_script": "scripts/report_master_results_full.py"},
+  "outputs": ["tables.md", "runs.csv", "report-manifest.json"]
+}

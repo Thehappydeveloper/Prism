@@ -1,0 +1,64 @@
+{
+  "run_id": "run_260724_180310_68a59f52",
+  "status": "finished",
+  "error": null,
+  "cancel_requested": false,
+  "navis_export": null,
+  "fov_comparison": {
+    "data_path": null,
+    "video_path": null
+  },
+  "queued_at": "2026-07-24T18:03:10.602145",
+  "started": "2026-07-24T18:03:12.423886",
+  "finished": "2026-07-24T18:35:14.649390",
+  "attempt": 1,
+  "events_path": "/api/runs/run_260724_180310_68a59f52/events",
+  "log_path": "/results/run_260724_180310_68a59f52/run_260724_180310_68a59f52.log",
+  "predictor_diagnostics_path": "/results/run_260724_180310_68a59f52/predictor_diagnostics.json",
+  "artifact_fingerprint": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260724_180310_68a59f52/config.json",
+      "mtime_ns": 1784930607308033425,
+      "size": 1750
+    },
+    "status.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260724_180310_68a59f52/status.json",
+      "mtime_ns": 1784932513534689713,
+      "size": 2277
+    },
+    "events.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260724_180310_68a59f52/events.json.gz",
+      "mtime_ns": 1784932463603152293,
+      "size": 616853
+    }
+  },
+  "config_summary": {
+    "abr": "RankBudgetABR",
+    "predictor": "LastObservedFovPredictor",
+    "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+    "network_profile": "great_wifi",
+    "network_trace": "",
+    "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478111023161/fov_trace.csv",
+    "ground_truth_mode": "visible_fraction",
+    "oracle_mode": "none"
+  },
+  "progress": {
+    "current": 18,
+    "total": 18,
+    "group_id": "group_run_260724_180310_9e1f0a6c",
+    "group_size": 98,
+    "phase": "finishing_outputs",
+    "detail": {
+      "segment_idx": 18,
+      "segment_total": 18
+    },
+    "phase_started_at": "2026-07-24T18:34:22.683931",
+    "heartbeat_at": "2026-07-24T18:35:13.364996"
+  },
+  "oracle_mode": "none",
+  "oracle_group_id": null,
+  "baseline_run_id": null,
+  "run_group_id": "paper_baselines_rankbudget_great_wifi_mrzhl5gv",
+  "run_group_name": "Paper_Baselines_RankBudget_great_wifi",
+  "run_group_source": "batch_plan"
+}

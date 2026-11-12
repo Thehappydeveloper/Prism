@@ -1,0 +1,69 @@
+{
+  "run_id": "run_260724_180310_dd62cf2e",
+  "status": "finished",
+  "error": null,
+  "cancel_requested": false,
+  "navis_export": null,
+  "fov_comparison": {
+    "ok": true,
+    "run_id": "run_260724_180310_dd62cf2e",
+    "status": "done",
+    "generated_at": "2026-07-28T14:05:23.231862",
+    "frame_count": 18,
+    "video_path": "/results/run_260724_180310_dd62cf2e/artifacts/fov_prediction_comparison.mp4",
+    "data_path": "/results/run_260724_180310_dd62cf2e/artifacts/fov_prediction_comparison.json"
+  },
+  "queued_at": "2026-07-24T18:03:10.168789",
+  "started": "2026-07-24T18:35:23.068240",
+  "finished": "2026-07-24T20:36:23.379508",
+  "attempt": 1,
+  "events_path": "/api/runs/run_260724_180310_dd62cf2e/events",
+  "log_path": "/results/run_260724_180310_dd62cf2e/run_260724_180310_dd62cf2e.log",
+  "predictor_diagnostics_path": "/results/run_260724_180310_dd62cf2e/predictor_diagnostics.json",
+  "artifact_fingerprint": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260724_180310_dd62cf2e/config.json",
+      "mtime_ns": 1784932638997282033,
+      "size": 3516
+    },
+    "status.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260724_180310_dd62cf2e/status.json",
+      "mtime_ns": 1784939781455733747,
+      "size": 2282
+    },
+    "events.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_260724_180310_dd62cf2e/events.json.gz",
+      "mtime_ns": 1784939768111862386,
+      "size": 633024
+    }
+  },
+  "config_summary": {
+    "abr": "RankBudgetABR",
+    "predictor": "ReachabilityRaycastPredictor",
+    "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+    "network_profile": "great_wifi",
+    "network_trace": "",
+    "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202479152052229/fov_trace.csv",
+    "ground_truth_mode": "visible_fraction",
+    "oracle_mode": "none"
+  },
+  "progress": {
+    "current": 18,
+    "total": 18,
+    "group_id": "group_run_260724_180309_cfa8318c",
+    "group_size": 91,
+    "phase": "finishing_outputs",
+    "detail": {
+      "segment_idx": 18,
+      "segment_total": 18
+    },
+    "phase_started_at": "2026-07-24T20:36:07.197018",
+    "heartbeat_at": "2026-07-24T20:36:21.136761"
+  },
+  "oracle_mode": "none",
+  "oracle_group_id": null,
+  "baseline_run_id": null,
+  "run_group_id": "paper_baselines_rankbudget_great_wifi_mrzhl5gv",
+  "run_group_name": "Paper_Baselines_RankBudget_great_wifi",
+  "run_group_source": "batch_plan"
+}

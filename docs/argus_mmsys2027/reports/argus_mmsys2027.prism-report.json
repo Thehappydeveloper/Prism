@@ -1,0 +1,36 @@
+{
+  "id": "argus_mmsys2027",
+  "title": "Argus MMSys 2027 reproduction",
+  "description": "Complete reproducibility build for the Argus MMSys 2027 evaluation.",
+  "inputs": {
+    "group_names": [
+      "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates",
+      "Paper_Baselines_RankBudget_great_wifi",
+      "Paper_Raycast_Ablations_RankBudget_great_wifi",
+      "Paper_Raycast_CostQuality_RankBudget_great_wifi",
+      "Raycast_Process_Scaling",
+      "RankBudget_118Mbps_VisualComparison"
+    ],
+    "group_run_counts": {
+      "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates": 1296,
+      "Paper_Baselines_RankBudget_great_wifi": 216,
+      "Paper_Raycast_Ablations_RankBudget_great_wifi": 243,
+      "Paper_Raycast_CostQuality_RankBudget_great_wifi": 324,
+      "Raycast_Process_Scaling": 135,
+      "RankBudget_118Mbps_VisualComparison": 5
+    }
+  },
+  "validation": {"expected_run_count": 2219},
+  "batch_plans": [
+    {"id": "coverage-aware-bandwidth-qoe", "label": "CoverageAwareUtilityABR bandwidth QoE sweep (1,296 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_baselines_coverage_aware_utility_abr_bandwidth_qoe.prism-batch-plan.json"},
+    {"id": "baseline-rank-budget", "label": "Baseline RankBudget sweep (216 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_baselines_rank_budget_great_wifi.prism-batch-plan.json"},
+    {"id": "raycast-design-ablations", "label": "Argus design-ablation sweep (243 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_raycast_ablations_rank_budget_great_wifi.prism-batch-plan.json"},
+    {"id": "raycast-cost-quality", "label": "Argus cost/quality sweeps (324 runs)", "path": "docs/argus_mmsys2027/batch-plans/paper_raycast_cost_quality_rank_budget_great_wifi.prism-batch-plan.json"},
+    {"id": "raycast-process-scaling", "label": "Argus process-scaling sweep (135 runs)", "path": "docs/argus_mmsys2027/batch-plans/raycast_process_scaling.prism-batch-plan.json"},
+    {"id": "rank-budget-visual-comparison", "label": "RankBudget visual comparison (5 runs)", "path": "docs/argus_mmsys2027/batch-plans/rank_budget_118mbps_visual_comparison.prism-batch-plan.json"}
+  ],
+  "legacy_renderers": {
+    "included_reports": ["baseline_bandwidth_qoe", "master_results_full", "raycast_process_scaling", "rank_budget_visual_comparison"]
+  },
+  "outputs": ["tables.md", "runs.csv", "report-manifest.json"]
+}

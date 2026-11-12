@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "name": "RankBudget_118Mbps_VisualComparison",
+  "description": "Reproducible five-run s15 visual comparison: Argus, last observed, linear extrapolation, trained LSTM, and trained MLP. One trace at fixed 118 Mb/s; RankBudgetABR uses the perfect bandwidth estimate with safety factor 1.0. Expected runs: 5.",
+  "generator": "prism_batch_planner",
+  "config": {
+    "presetSelectionVersion": 2,
+    "analysis_qoe_function": "VisiblePlaybackUtility",
+    "analysis_qoe_scoring_version": "mpd_stable_visible_utility_v1",
+    "segmentWorkersOverride": 1,
+    "selectedAbrs": ["RankBudgetABR"],
+    "selectedPredictors": ["LastObservedFovPredictor", "LinearExtrapolationPredictor", "TrainedFovPredictor", "ReachabilityRaycastPredictor"],
+    "selectedBandwidthPredictors": ["GroundTruthBandwidthPredictor"],
+    "selectedAbrPresetsByAlgo": {"RankBudgetABR": ["perfect_bandwidth"]},
+    "selectedFovPresetsByPredictor": {
+      "LastObservedFovPredictor": ["__default__"],
+      "LinearExtrapolationPredictor": ["linear_2s"],
+      "TrainedFovPredictor": ["lstm_10", "mlp_10"],
+      "ReachabilityRaycastPredictor": ["raycast_fixed_origins_500_samples_6_6n_0.6_processes_8_paper_vis"]
+    },
+    "selectedBandwidthPresetsByPredictor": {"GroundTruthBandwidthPredictor": ["__default__"]},
+    "networkSource": "profile",
+    "selectedNetworkTraces": [],
+    "selectedNetworkProfiles": ["paper_wifi_118"],
+    "networkTraceSamplingMode": "proportional",
+    "netSamples": 1,
+    "fovSamples": 1,
+    "seedText": "42",
+    "rtt": 0.06,
+    "bufferWindowSegments": 2,
+    "enableMidCancel": false,
+    "headsetPreset": "meta_quest_3",
+    "batchGroupName": "RankBudget_118Mbps_VisualComparison",
+    "mediaPairs": [{
+      "id": "visual-s15",
+      "dataset_id": "s15",
+      "fov_traces": ["data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv"]
+    }]
+  }
+}

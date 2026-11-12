@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "name": "Paper_Raycast_CostQuality_RankBudget_great_wifi",
+  "description": "Raycast cost-quality sweep: candidate-origin, adaptive visibility-time, and rays-per-tile budgets over 27 matched traces. One outer segment worker limits cross-run contention; each predictor uses eight raycast processes while adaptive self-throttling remains enabled.",
+  "generator": "prism_batch_planner",
+  "config": {
+    "presetSelectionVersion": 2,
+    "analysis_qoe_function": "VisiblePlaybackUtility",
+    "analysis_qoe_scoring_version": "mpd_stable_visible_utility_v1",
+    "segmentWorkersOverride": 1,
+    "selectedAbrs": ["RankBudgetABR"],
+    "selectedPredictors": ["ReachabilityRaycastPredictor"],
+    "selectedBandwidthPredictors": ["GroundTruthBandwidthPredictor"],
+    "selectedAbrPresetsByAlgo": {"RankBudgetABR": ["paper_conservative"]},
+    "selectedFovPresetsByPredictor": {"ReachabilityRaycastPredictor": [
+      "raycast_3000ms_origins_64_6n_0.6_processes_8", "raycast_3000ms_origins_128_6n_0.6_processes_8", "raycast_3000ms_origins_250_6n_0.6_processes_8", "raycast_3000ms_origins_500_6n_0.6_processes_8", "raycast_3000ms_origins_750_6n_0.6_processes_8", "raycast_3000ms_origins_1000_6n_0.6_processes_8",
+      "raycast_500ms_origins_500_6n_0.6_processes_8", "raycast_1000ms_origins_500_6n_0.6_processes_8", "raycast_2000ms_origins_500_6n_0.6_processes_8",
+      "raycast_3000ms_origins_500_6n_0.6_rays_1_processes_8", "raycast_3000ms_origins_500_6n_0.6_rays_3_processes_8", "raycast_3000ms_origins_500_6n_0.6_rays_12_processes_8"
+    ]},
+    "selectedBandwidthPresetsByPredictor": {"GroundTruthBandwidthPredictor": ["__default__"]},
+    "networkSource": "profile",
+    "selectedNetworkTraces": [],
+    "selectedNetworkProfiles": ["great_wifi"],
+    "networkTraceSamplingMode": "proportional",
+    "netSamples": 1,
+    "fovSamples": 14,
+    "seedText": "42",
+    "rtt": 0.06,
+    "bufferWindowSegments": 2,
+    "enableMidCancel": false,
+    "headsetPreset": "meta_quest_3",
+    "batchGroupName": "Paper_Raycast_CostQuality_RankBudget_great_wifi",
+    "mediaPairs": [
+      {"id": "paper-s7", "dataset_id": "s7", "fov_traces": ["data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202471114263898/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_2024711163558969/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247111745228/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202475132414107/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202475152923773/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478111023161/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478115722266/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478143053969/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247815450229/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247816177748/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247912297711/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247915212889/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202479153657558/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_7/_202479164949697/fov_trace.csv"]},
+      {"id": "paper-s15", "dataset_id": "s15", "fov_traces": ["data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711144742482/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711165040647/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202471117590794/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202475135755624/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247516250293/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202478112922396/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247812121775/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202478151953237/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202478163058558/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202479152052229/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247916144751/fov_trace.csv", "data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247917420648/fov_trace.csv"]}
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "raycast_process_scaling",
+  "title": "Raycast process scaling",
+  "description": "Internal raycasting worker-count scaling experiment.",
+  "inputs": {"group_names": ["Raycast_Process_Scaling"], "group_run_counts": {"Raycast_Process_Scaling": 135}},
+  "parent_report": "argus_mmsys2027",
+  "batch_plans": [{"id": "raycast-process-scaling", "label": "Argus process-scaling sweep (135 runs)", "path": "docs/argus_mmsys2027/batch-plans/raycast_process_scaling.prism-batch-plan.json"}],
+  "validation": {"expected_run_count": 135},
+  "publication_layout": {"columns": 1, "width_inches": 3.5, "figure_width_px": 860, "reference_font_px": 27},
+  "render_options": {"figure_font_size_pt": {"type": "number", "label": "Final tick font size (pt), at 3.5 in single-column width", "default": 9, "min": 6, "max": 14}},
+  "metrics": [{"id": "stable_visible_utility", "version": 1}, {"id": "weighted_iou", "version": 1}, {"id": "predictor_latency_ms", "version": 1}],
+  "legacy_renderers": {"table_script": "scripts/report_raycast_process_scaling.py", "figure_script": "scripts/generate_raycast_process_scaling_figure.py"},
+  "outputs": ["tables.md", "runs.csv", "report-manifest.json", "figures/raycast_process_scaling.svg"]
+}

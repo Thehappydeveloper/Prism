@@ -1,0 +1,2817 @@
+{
+  "id": "model_260723_171401_5ca2",
+  "name": "MLP_10",
+  "run_id": "train_260723_171158_3c62",
+  "plan_id": "tpl_mlp_s1_s15_holdout",
+  "plan_name": "MLP_10",
+  "family": "fov",
+  "model": {
+    "model_type": "mlp",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "history": {
+    "history_duration_s": 5,
+    "history_step_s": 0.357142857,
+    "sample_stride_s": 0.5,
+    "prediction_horizon_s": 10,
+    "include_current": true,
+    "fixed_history_samples": 0
+  },
+  "training": {
+    "epochs": 50,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "optimizer": "adam",
+    "loss": "mse",
+    "early_stopping_patience": 3,
+    "checkpoint_frequency": 1,
+    "device": "auto",
+    "num_workers": 2,
+    "trace_cache_entries": 256,
+    "mixed_precision": false,
+    "scheduler": "none"
+  },
+  "stats": {
+    "x_mean": [
+      -23.76894760131836,
+      0.6854998469352722,
+      -33.364463806152344,
+      0.008459159173071384,
+      -0.03431849181652069,
+      -0.0004091941227670759,
+      0.585131049156189,
+      -23.759614944458008,
+      0.6856507062911987,
+      -33.415279388427734,
+      0.00872218981385231,
+      -0.030408531427383423,
+      -0.00035785845830105245,
+      0.5849208831787109,
+      -23.750154495239258,
+      0.6858665943145752,
+      -33.46517562866211,
+      0.008992582559585571,
+      -0.02730119600892067,
+      -1.483519281464396e-05,
+      0.5849528312683105,
+      -23.74037742614746,
+      0.6860917210578918,
+      -33.51521301269531,
+      0.009070941247045994,
+      -0.0251742135733366,
+      7.218539394671097e-05,
+      0.5856109857559204,
+      -23.730266571044922,
+      0.6861650347709656,
+      -33.56493377685547,
+      0.009193780831992626,
+      -0.025082075968384743,
+      0.0001684571907389909,
+      0.585787832736969,
+      -23.71901512145996,
+      0.6862149834632874,
+      -33.61406707763672,
+      0.009260816499590874,
+      -0.02182478830218315,
+      -2.415048220427707e-05,
+      0.5862590670585632,
+      -23.706645965576172,
+      0.6863776445388794,
+      -33.662235260009766,
+      0.009270729497075081,
+      -0.022851455956697464,
+      0.00020076373766642064,
+      0.5868495106697083,
+      -23.693716049194336,
+      0.6864976286888123,
+      -33.710025787353516,
+      0.009289353154599667,
+      -0.02292686142027378,
+      0.00032305929926224053,
+      0.5873668789863586,
+      -23.68080711364746,
+      0.6864815354347229,
+      -33.75733947753906,
+      0.009286025539040565,
+      -0.02407185174524784,
+      0.000250511133344844,
+      0.5875654816627502,
+      -23.667701721191406,
+      0.686497151851654,
+      -33.803627014160156,
+      0.009337779134511948,
+      -0.021664604544639587,
+      0.00011657210416160524,
+      0.5882310271263123,
+      -23.654552459716797,
+      0.6865646839141846,
+      -33.84903335571289,
+      0.009351002052426338,
+      -0.022184481844305992,
+      0.00017494116036687046,
+      0.5892380475997925,
+      -23.64188003540039,
+      0.6865314245223999,
+      -33.89349365234375,
+      0.009412352927029133,
+      -0.024751540273427963,
+      0.00035465529072098434,
+      0.5899806022644043,
+      -23.629703521728516,
+      0.6863842606544495,
+      -33.93716049194336,
+      0.0094533646479249,
+      -0.025648759678006172,
+      0.00019057063036598265,
+      0.5904560089111328,
+      -23.618167877197266,
+      0.6863013505935669,
+      -33.979488372802734,
+      0.009530778974294662,
+      -0.023148737847805023,
+      0.0002427010767860338,
+      0.5912715792655945,
+      -23.607271194458008,
+      0.6862503886222839,
+      -34.02033996582031,
+      0.00943551491945982,
+      -0.024785414338111877,
+      0.0003415770479477942,
+      0.5923178195953369
+    ],
+    "x_std": [
+      9.882680892944336,
+      0.12890379130840302,
+      13.5928955078125,
+      0.048533450812101364,
+      0.7329085469245911,
+      0.05285826325416565,
+      0.33773791790008545,
+      9.849777221679688,
+      0.12917210161685944,
+      13.5665283203125,
+      0.048377249389886856,
+      0.7329190969467163,
+      0.052722904831171036,
+      0.33848729729652405,
+      9.81710147857666,
+      0.1295052468776703,
+      13.540218353271484,
+      0.048217229545116425,
+      0.7328141331672668,
+      0.05260210856795311,
+      0.3389560580253601,
+      9.783907890319824,
+      0.12983757257461548,
+      13.514431953430176,
+      0.04791148379445076,
+      0.7323951721191406,
+      0.05255329981446266,
+      0.3389396071434021,
+      9.751412391662598,
+      0.12993371486663818,
+      13.487833023071289,
+      0.047780752182006836,
+      0.7319734692573547,
+      0.05244138091802597,
+      0.33959195017814636,
+      9.720625877380371,
+      0.130037322640419,
+      13.46137809753418,
+      0.04787174239754677,
+      0.7315818667411804,
+      0.052345793694257736,
+      0.33983930945396423,
+      9.690631866455078,
+      0.1302708238363266,
+      13.436117172241211,
+      0.047887805849313736,
+      0.7311310768127441,
+      0.05231751129031181,
+      0.33972570300102234,
+      9.660721778869629,
+      0.13047917187213898,
+      13.411782264709473,
+      0.0477580726146698,
+      0.7307427525520325,
+      0.05225173011422157,
+      0.3396911025047302,
+      9.63212776184082,
+      0.130487859249115,
+      13.38763427734375,
+      0.04787299782037735,
+      0.7302741408348083,
+      0.052340660244226456,
+      0.3402457535266876,
+      9.605831146240234,
+      0.13052871823310852,
+      13.3645658493042,
+      0.048005275428295135,
+      0.7297742962837219,
+      0.05230138450860977,
+      0.3403140902519226,
+      9.580986976623535,
+      0.130584716796875,
+      13.343300819396973,
+      0.047988519072532654,
+      0.7291188836097717,
+      0.05229213088750839,
+      0.3399478793144226,
+      9.557188987731934,
+      0.1305505633354187,
+      13.323223114013672,
+      0.04793852940201759,
+      0.7284021377563477,
+      0.05222580209374428,
+      0.3400360941886902,
+      9.53543472290039,
+      0.1304088979959488,
+      13.30391788482666,
+      0.048060957342386246,
+      0.7278222441673279,
+      0.0522526390850544,
+      0.3403674364089966,
+      9.51571273803711,
+      0.13030609488487244,
+      13.285968780517578,
+      0.048126719892024994,
+      0.7272835969924927,
+      0.05217922851443291,
+      0.34027695655822754,
+      9.497040748596191,
+      0.13019083440303802,
+      13.269702911376953,
+      0.04808070883154869,
+      0.7265675067901611,
+      0.05223287269473076,
+      0.33986949920654297
+    ],
+    "y_mean": [
+      -23.474824905395508,
+      0.6842365860939026,
+      -34.7457389831543,
+      0.009753316640853882,
+      -0.026206202805042267,
+      0.0005088713369332254,
+      0.6047800779342651
+    ],
+    "y_std": [
+      9.543971061706543,
+      0.12732146680355072,
+      12.990863800048828,
+      0.04862181097269058,
+      0.7168721556663513,
+      0.05236372724175453,
+      0.33829465508461
+    ],
+    "input_shape": [
+      15,
+      7
+    ],
+    "output_size": 7,
+    "target_kind": "pose",
+    "output_tile_ids": []
+  },
+  "index": {
+    "cache_key": "cce1f0d627bc95d6d9fbd3f7e920be7117fe650890286f6bcfe6823d282126b4",
+    "index_dir": "/home/jeremy/Documents/python_workspace/prism/.prism_cache/training/sample_indexes/cce1f0d627bc95d6d9fbd3f7e920be7117fe650890286f6bcfe6823d282126b4",
+    "split_files": {
+      "train": "/home/jeremy/Documents/python_workspace/prism/.prism_cache/training/sample_indexes/cce1f0d627bc95d6d9fbd3f7e920be7117fe650890286f6bcfe6823d282126b4/train.jsonl",
+      "validation": "/home/jeremy/Documents/python_workspace/prism/.prism_cache/training/sample_indexes/cce1f0d627bc95d6d9fbd3f7e920be7117fe650890286f6bcfe6823d282126b4/validation.jsonl",
+      "test": "/home/jeremy/Documents/python_workspace/prism/.prism_cache/training/sample_indexes/cce1f0d627bc95d6d9fbd3f7e920be7117fe650890286f6bcfe6823d282126b4/test.jsonl"
+    },
+    "counts": {
+      "train": 22946,
+      "validation": 4172,
+      "test": 4023
+    },
+    "per_dataset": [
+      {
+        "dataset_id": "tds_260625_111547_912a",
+        "dataset_name": "S1",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_111619_6ebe",
+        "dataset_name": "S2",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112142_395e",
+        "dataset_name": "S3",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112156_d49d",
+        "dataset_name": "S4",
+        "valid_samples": 2235,
+        "trace_count": 15
+      },
+      {
+        "dataset_id": "tds_260625_112210_1f37",
+        "dataset_name": "S5",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112222_e510",
+        "dataset_name": "S6",
+        "valid_samples": 1937,
+        "trace_count": 13
+      },
+      {
+        "dataset_id": "tds_260625_112233_4ac7",
+        "dataset_name": "S7",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112247_c461",
+        "dataset_name": "S8",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112258_a8f7",
+        "dataset_name": "S9",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112315_76a9",
+        "dataset_name": "S10",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112323_ffc9",
+        "dataset_name": "S11",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112334_fd1e",
+        "dataset_name": "S12",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112344_2ef5",
+        "dataset_name": "S13",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112353_e3cd",
+        "dataset_name": "S14",
+        "valid_samples": 2086,
+        "trace_count": 14
+      },
+      {
+        "dataset_id": "tds_260625_112404_a7e4",
+        "dataset_name": "S15",
+        "valid_samples": 1937,
+        "trace_count": 13
+      }
+    ],
+    "datasets": [
+      {
+        "id": "tds_260625_111547_912a",
+        "name": "S1",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_2024711141410831/fov_trace.csv",
+              "mtime_ns": 1782232457636074250,
+              "size": 4678229
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202471115179123/fov_trace.csv",
+              "mtime_ns": 1782232459237037759,
+              "size": 4677541
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_2024711173358451/fov_trace.csv",
+              "mtime_ns": 1782232460867000946,
+              "size": 4678627
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202475131153927/fov_trace.csv",
+              "mtime_ns": 1782232462520963952,
+              "size": 4677298
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202475151625109/fov_trace.csv",
+              "mtime_ns": 1782232463900933336,
+              "size": 4676864
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202478105831343/fov_trace.csv",
+              "mtime_ns": 1782232464908911133,
+              "size": 4677331
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_20247811461137/fov_trace.csv",
+              "mtime_ns": 1782232465924888882,
+              "size": 4677094
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202478141859972/fov_trace.csv",
+              "mtime_ns": 1782232466936866849,
+              "size": 4678602
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202478145317712/fov_trace.csv",
+              "mtime_ns": 1782232467937845182,
+              "size": 4676310
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_20247816612354/fov_trace.csv",
+              "mtime_ns": 1782232468956823252,
+              "size": 4678491
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_20247912257730/fov_trace.csv",
+              "mtime_ns": 1782232469969801581,
+              "size": 4679570
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_20247914517687/fov_trace.csv",
+              "mtime_ns": 1782232470975780184,
+              "size": 4677855
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202479152540927/fov_trace.csv",
+              "mtime_ns": 1782232471986758807,
+              "size": 4676736
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_1/DefaultParticipant_202479163532527/fov_trace.csv",
+              "mtime_ns": 1782232472997737556,
+              "size": 4678258
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:15:47.297773"
+      },
+      {
+        "id": "tds_260625_111619_6ebe",
+        "name": "S2",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202471114162578/fov_trace.csv",
+              "mtime_ns": 1782236547221246508,
+              "size": 4675575
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202471115192888/fov_trace.csv",
+              "mtime_ns": 1782236548866247692,
+              "size": 4675004
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_2024711173546572/fov_trace.csv",
+              "mtime_ns": 1782236550453248841,
+              "size": 4678334
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202475131351505/fov_trace.csv",
+              "mtime_ns": 1782236552133250064,
+              "size": 4676207
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_20247515182564/fov_trace.csv",
+              "mtime_ns": 1782236553785251271,
+              "size": 4676310
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_20247811020108/fov_trace.csv",
+              "mtime_ns": 1782236555424252473,
+              "size": 4676098
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202478114756996/fov_trace.csv",
+              "mtime_ns": 1782236557077253697,
+              "size": 4676151
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202478142051699/fov_trace.csv",
+              "mtime_ns": 1782236558763254952,
+              "size": 4677714
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_20247814556697/fov_trace.csv",
+              "mtime_ns": 1782236560220256044,
+              "size": 4676576
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_20247816754135/fov_trace.csv",
+              "mtime_ns": 1782236561439256963,
+              "size": 4677341
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202479122713223/fov_trace.csv",
+              "mtime_ns": 1782236562479257747,
+              "size": 4679788
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_20247914536139/fov_trace.csv",
+              "mtime_ns": 1782236563587258586,
+              "size": 4677001
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_202479152732659/fov_trace.csv",
+              "mtime_ns": 1782236564824259527,
+              "size": 4677436
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_2/DefaultParticipant_2024791637429/fov_trace.csv",
+              "mtime_ns": 1782236565888260341,
+              "size": 4676306
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:16:19.513861"
+      },
+      {
+        "id": "tds_260625_112142_395e",
+        "name": "S3",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_2024711141745682/fov_trace.csv",
+              "mtime_ns": 1782237124236879360,
+              "size": 4675378
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_2024711152047796/fov_trace.csv",
+              "mtime_ns": 1782237125263884680,
+              "size": 4675069
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_2024711173727614/fov_trace.csv",
+              "mtime_ns": 1782237126313890114,
+              "size": 4677595
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202475131536465/fov_trace.csv",
+              "mtime_ns": 1782237127420895837,
+              "size": 4676622
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202475152010976/fov_trace.csv",
+              "mtime_ns": 1782237128452901167,
+              "size": 4676455
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_2024781125860/fov_trace.csv",
+              "mtime_ns": 1782237129496906553,
+              "size": 4676149
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202478114940185/fov_trace.csv",
+              "mtime_ns": 1782237130549911980,
+              "size": 4675608
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202478142235978/fov_trace.csv",
+              "mtime_ns": 1782237131597917376,
+              "size": 4674633
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202478145659206/fov_trace.csv",
+              "mtime_ns": 1782237132614922607,
+              "size": 4676815
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_20247815374799/fov_trace.csv",
+              "mtime_ns": 1782237133654927951,
+              "size": 4675938
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_20247816933309/fov_trace.csv",
+              "mtime_ns": 1782237134680933218,
+              "size": 4676601
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202479145453597/fov_trace.csv",
+              "mtime_ns": 1782237135699938443,
+              "size": 4676623
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202479152923420/fov_trace.csv",
+              "mtime_ns": 1782237136735943751,
+              "size": 4676937
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_3/DefaultParticipant_202479163950601/fov_trace.csv",
+              "mtime_ns": 1782237137864949529,
+              "size": 4673851
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:21:42.242638"
+      },
+      {
+        "id": "tds_260625_112156_d49d",
+        "name": "S4",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_2024711142011232/fov_trace.csv",
+              "mtime_ns": 1782237700578270517,
+              "size": 4675441
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202471115223737/fov_trace.csv",
+              "mtime_ns": 1782237701991275370,
+              "size": 4674759
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_2024711173913434/fov_trace.csv",
+              "mtime_ns": 1782237703487280505,
+              "size": 4677745
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202475131739973/fov_trace.csv",
+              "mtime_ns": 1782237705103286048,
+              "size": 4676515
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202475152230636/fov_trace.csv",
+              "mtime_ns": 1782237706694291501,
+              "size": 4676513
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_20247811357485/fov_trace.csv",
+              "mtime_ns": 1782237708337297128,
+              "size": 4676579
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202478115130718/fov_trace.csv",
+              "mtime_ns": 1782237709932302586,
+              "size": 4676394
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202478142446671/fov_trace.csv",
+              "mtime_ns": 1782237711462307818,
+              "size": 4675381
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202478145846929/fov_trace.csv",
+              "mtime_ns": 1782237712960312937,
+              "size": 4676368
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202478153857864/fov_trace.csv",
+              "mtime_ns": 1782237714433317967,
+              "size": 4676458
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202478161132650/fov_trace.csv",
+              "mtime_ns": 1782237715965323195,
+              "size": 4676844
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202479145638575/fov_trace.csv",
+              "mtime_ns": 1782237717523328508,
+              "size": 4675761
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_202479153115539/fov_trace.csv",
+              "mtime_ns": 1782237719131333988,
+              "size": 4677723
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_20247916425513/fov_trace.csv",
+              "mtime_ns": 1782237720720339398,
+              "size": 4675135
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_4/DefaultParticipant_20247916446824/fov_trace.csv",
+              "mtime_ns": 1782237722298344767,
+              "size": 4675444
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:21:56.071299"
+      },
+      {
+        "id": "tds_260625_112210_1f37",
+        "name": "S5",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_2024711142159700/fov_trace.csv",
+              "mtime_ns": 1782238282329073202,
+              "size": 4676329
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_2024711152424849/fov_trace.csv",
+              "mtime_ns": 1782238283978077929,
+              "size": 4678778
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202471117412667/fov_trace.csv",
+              "mtime_ns": 1782238285571082494,
+              "size": 4678077
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202475131930195/fov_trace.csv",
+              "mtime_ns": 1782238287212087195,
+              "size": 4676631
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202475152418864/fov_trace.csv",
+              "mtime_ns": 1782238288863091924,
+              "size": 4675766
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202478115319752/fov_trace.csv",
+              "mtime_ns": 1782238290422096388,
+              "size": 4677021
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_20247811543724/fov_trace.csv",
+              "mtime_ns": 1782238291992100882,
+              "size": 4676017
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202478142639980/fov_trace.csv",
+              "mtime_ns": 1782238293463105091,
+              "size": 4676940
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_20247815031881/fov_trace.csv",
+              "mtime_ns": 1782238295038109596,
+              "size": 4677706
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202478154157388/fov_trace.csv",
+              "mtime_ns": 1782238296588114030,
+              "size": 4676681
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202478161316408/fov_trace.csv",
+              "mtime_ns": 1782238298178118576,
+              "size": 4678924
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_202479145822899/fov_trace.csv",
+              "mtime_ns": 1782238299788123178,
+              "size": 4677071
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_20247915331571/fov_trace.csv",
+              "mtime_ns": 1782238301284127453,
+              "size": 4678379
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_5/DefaultParticipant_20247916461719/fov_trace.csv",
+              "mtime_ns": 1782238302892132047,
+              "size": 4675845
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:22:11.033470"
+      },
+      {
+        "id": "tds_260625_112222_e510",
+        "name": "S6",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_2024711163354999/fov_trace.csv",
+              "mtime_ns": 1782238880050721047,
+              "size": 4677168
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_2024711174251743/fov_trace.csv",
+              "mtime_ns": 1782238881715725512,
+              "size": 4679045
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_202475132145622/fov_trace.csv",
+              "mtime_ns": 1782238883236729590,
+              "size": 4678149
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_20247515264092/fov_trace.csv",
+              "mtime_ns": 1782238884862733951,
+              "size": 4677350
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_202478115514228/fov_trace.csv",
+              "mtime_ns": 1782238886422738133,
+              "size": 4678337
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_20247811815319/fov_trace.csv",
+              "mtime_ns": 1782238887920742148,
+              "size": 4676751
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_202478142844312/fov_trace.csv",
+              "mtime_ns": 1782238889593746633,
+              "size": 4676720
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_20247815232394/fov_trace.csv",
+              "mtime_ns": 1782238891226751010,
+              "size": 4678397
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_202478154549896/fov_trace.csv",
+              "mtime_ns": 1782238892861755392,
+              "size": 4677366
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_20247816150543/fov_trace.csv",
+              "mtime_ns": 1782238894414759553,
+              "size": 4679177
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_20247915016624/fov_trace.csv",
+              "mtime_ns": 1782238896186764301,
+              "size": 4677770
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_202479153450833/fov_trace.csv",
+              "mtime_ns": 1782238897777768564,
+              "size": 4679887
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_6/DefaultParticipant_2024791648092/fov_trace.csv",
+              "mtime_ns": 1782238899397772904,
+              "size": 4676058
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:22:22.946829"
+      },
+      {
+        "id": "tds_260625_112233_4ac7",
+        "name": "S7",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202471114263898/fov_trace.csv",
+              "mtime_ns": 1782239457758527629,
+              "size": 4676235
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_2024711163558969/fov_trace.csv",
+              "mtime_ns": 1782239459229505685,
+              "size": 4674878
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247111745228/fov_trace.csv",
+              "mtime_ns": 1782239460820482006,
+              "size": 4677866
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202475132414107/fov_trace.csv",
+              "mtime_ns": 1782239462517456815,
+              "size": 4676209
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202475152923773/fov_trace.csv",
+              "mtime_ns": 1782239464114433164,
+              "size": 4676016
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478111023161/fov_trace.csv",
+              "mtime_ns": 1782239465704409679,
+              "size": 4676639
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478115722266/fov_trace.csv",
+              "mtime_ns": 1782239467251386881,
+              "size": 4676920
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202478143053969/fov_trace.csv",
+              "mtime_ns": 1782239468794364196,
+              "size": 4675885
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247815450229/fov_trace.csv",
+              "mtime_ns": 1782239470349341389,
+              "size": 4676355
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247816177748/fov_trace.csv",
+              "mtime_ns": 1782239471924318342,
+              "size": 4677068
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247912297711/fov_trace.csv",
+              "mtime_ns": 1782239473631293430,
+              "size": 4680025
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_20247915212889/fov_trace.csv",
+              "mtime_ns": 1782239475272269540,
+              "size": 4675962
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/DefaultParticipant_202479153657558/fov_trace.csv",
+              "mtime_ns": 1782239476883246146,
+              "size": 4678548
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_7/_202479164949697/fov_trace.csv",
+              "mtime_ns": 1782239478533222246,
+              "size": 4676140
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:22:33.663353"
+      },
+      {
+        "id": "tds_260625_112247_c461",
+        "name": "S8",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_2024711143025783/fov_trace.csv",
+              "mtime_ns": 1782240039954586096,
+              "size": 4676537
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202471116374487/fov_trace.csv",
+              "mtime_ns": 1782240041558574946,
+              "size": 4678200
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_2024711174644146/fov_trace.csv",
+              "mtime_ns": 1782240043162563815,
+              "size": 4678231
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202475132624814/fov_trace.csv",
+              "mtime_ns": 1782240044859552058,
+              "size": 4677129
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_20247515313266/fov_trace.csv",
+              "mtime_ns": 1782240046397541422,
+              "size": 4675860
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202478111222707/fov_trace.csv",
+              "mtime_ns": 1782240047912530961,
+              "size": 4677685
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202478115910690/fov_trace.csv",
+              "mtime_ns": 1782240049420520565,
+              "size": 4677017
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202478143247481/fov_trace.csv",
+              "mtime_ns": 1782240051053509326,
+              "size": 4676021
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_20247815645364/fov_trace.csv",
+              "mtime_ns": 1782240052597498718,
+              "size": 4676328
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202478161851410/fov_trace.csv",
+              "mtime_ns": 1782240054121488262,
+              "size": 4677093
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_2024791231556/fov_trace.csv",
+              "mtime_ns": 1782240055776476928,
+              "size": 4680014
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_20247915359187/fov_trace.csv",
+              "mtime_ns": 1782240057401465818,
+              "size": 4676747
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202479154412381/fov_trace.csv",
+              "mtime_ns": 1782240058952455231,
+              "size": 4681025
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_8/DefaultParticipant_202479165139391/fov_trace.csv",
+              "mtime_ns": 1782240060463444934,
+              "size": 4675825
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:22:47.792787"
+      },
+      {
+        "id": "tds_260625_112258_a8f7",
+        "name": "S9",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_2024711143212856/fov_trace.csv",
+              "mtime_ns": 1782240616126444313,
+              "size": 4676985
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_2024711163931102/fov_trace.csv",
+              "mtime_ns": 1782240617797436938,
+              "size": 4677200
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_2024711174829255/fov_trace.csv",
+              "mtime_ns": 1782240619353430077,
+              "size": 4677287
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202475132818979/fov_trace.csv",
+              "mtime_ns": 1782240621036422662,
+              "size": 4676508
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202475161349596/fov_trace.csv",
+              "mtime_ns": 1782240622609415737,
+              "size": 4675733
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202478111410923/fov_trace.csv",
+              "mtime_ns": 1782240624180408828,
+              "size": 4676392
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_20247812058310/fov_trace.csv",
+              "mtime_ns": 1782240625761401879,
+              "size": 4676878
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202478143435493/fov_trace.csv",
+              "mtime_ns": 1782240627385394749,
+              "size": 4676815
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202478154810581/fov_trace.csv",
+              "mtime_ns": 1782240628988387715,
+              "size": 4676812
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_20247815838974/fov_trace.csv",
+              "mtime_ns": 1782240630609380611,
+              "size": 4676646
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202478162032994/fov_trace.csv",
+              "mtime_ns": 1782240632218373564,
+              "size": 4676560
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_20247915460351/fov_trace.csv",
+              "mtime_ns": 1782240633736366921,
+              "size": 4679646
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_20247915950220/fov_trace.csv",
+              "mtime_ns": 1782240635421359553,
+              "size": 4676768
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_9/DefaultParticipant_202479165324203/fov_trace.csv",
+              "mtime_ns": 1782240637037352492,
+              "size": 4675680
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:22:58.748830"
+      },
+      {
+        "id": "tds_260625_112315_76a9",
+        "name": "S10",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202471114341650/fov_trace.csv",
+              "mtime_ns": 1782233047192704598,
+              "size": 4677000
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_2024711164144871/fov_trace.csv",
+              "mtime_ns": 1782233048208693243,
+              "size": 4676034
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_2024711175013719/fov_trace.csv",
+              "mtime_ns": 1782233049217682002,
+              "size": 4677483
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202475133847456/fov_trace.csv",
+              "mtime_ns": 1782233050239670654,
+              "size": 4676109
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202475161542871/fov_trace.csv",
+              "mtime_ns": 1782233051271659230,
+              "size": 4675117
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202478111612890/fov_trace.csv",
+              "mtime_ns": 1782233052317647690,
+              "size": 4674806
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_20247812252941/fov_trace.csv",
+              "mtime_ns": 1782233053341636430,
+              "size": 4675931
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202478143628203/fov_trace.csv",
+              "mtime_ns": 1782233054364625216,
+              "size": 4677732
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202478151027486/fov_trace.csv",
+              "mtime_ns": 1782233055391613996,
+              "size": 4677276
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202478162215256/fov_trace.csv",
+              "mtime_ns": 1782233056406602942,
+              "size": 4676377
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202479123259720/fov_trace.csv",
+              "mtime_ns": 1782233057434591783,
+              "size": 4680130
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202479151137138/fov_trace.csv",
+              "mtime_ns": 1782233058471580563,
+              "size": 4677138
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202479154750151/fov_trace.csv",
+              "mtime_ns": 1782233059496569509,
+              "size": 4678920
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_10/DefaultParticipant_202479165510411/fov_trace.csv",
+              "mtime_ns": 1782233060533558362,
+              "size": 4674954
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:23:15.092757"
+      },
+      {
+        "id": "tds_260625_112323_ffc9",
+        "name": "S11",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_2024711143553877/fov_trace.csv",
+              "mtime_ns": 1782233634963408622,
+              "size": 4676857
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202471116432857/fov_trace.csv",
+              "mtime_ns": 1782233635967409713,
+              "size": 4676511
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_2024711175156680/fov_trace.csv",
+              "mtime_ns": 1782233637012410860,
+              "size": 4678757
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202475134038375/fov_trace.csv",
+              "mtime_ns": 1782233638442412451,
+              "size": 4676412
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202475161735491/fov_trace.csv",
+              "mtime_ns": 1782233640098414319,
+              "size": 4675810
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_20247811227947/fov_trace.csv",
+              "mtime_ns": 1782233641692416146,
+              "size": 4677211
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_20247812441717/fov_trace.csv",
+              "mtime_ns": 1782233643267417979,
+              "size": 4676792
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202478143823879/fov_trace.csv",
+              "mtime_ns": 1782233644899419906,
+              "size": 4676962
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202478151237695/fov_trace.csv",
+              "mtime_ns": 1782233646598421945,
+              "size": 4676669
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_20247815504858/fov_trace.csv",
+              "mtime_ns": 1782233648195423889,
+              "size": 4677375
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202478162354979/fov_trace.csv",
+              "mtime_ns": 1782233649812425886,
+              "size": 4677810
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202479151328649/fov_trace.csv",
+              "mtime_ns": 1782233651423427904,
+              "size": 4677581
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202479154947796/fov_trace.csv",
+              "mtime_ns": 1782233653043429960,
+              "size": 4678881
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_11/DefaultParticipant_202479165656350/fov_trace.csv",
+              "mtime_ns": 1782233654763432175,
+              "size": 4676535
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:23:24.064995"
+      },
+      {
+        "id": "tds_260625_112334_fd1e",
+        "name": "S12",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_20247111442950/fov_trace.csv",
+              "mtime_ns": 1782234212286349570,
+              "size": 4676879
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_2024711164517630/fov_trace.csv",
+              "mtime_ns": 1782234213835357217,
+              "size": 4674410
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_2024711175347338/fov_trace.csv",
+              "mtime_ns": 1782234215429365094,
+              "size": 4677598
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202475134245262/fov_trace.csv",
+              "mtime_ns": 1782234217066373193,
+              "size": 4675847
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202475161932501/fov_trace.csv",
+              "mtime_ns": 1782234218656381069,
+              "size": 4674843
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_20247811240903/fov_trace.csv",
+              "mtime_ns": 1782234220269389067,
+              "size": 4675495
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_20247812636916/fov_trace.csv",
+              "mtime_ns": 1782234221822396778,
+              "size": 4675414
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202478144018989/fov_trace.csv",
+              "mtime_ns": 1782234223499405114,
+              "size": 4676464
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202478151430278/fov_trace.csv",
+              "mtime_ns": 1782234225014412652,
+              "size": 4676731
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202478162545959/fov_trace.csv",
+              "mtime_ns": 1782234226564420373,
+              "size": 4678078
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202479123452202/fov_trace.csv",
+              "mtime_ns": 1782234228192428492,
+              "size": 4679608
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202479151523664/fov_trace.csv",
+              "mtime_ns": 1782234229775436396,
+              "size": 4675945
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_202479155151361/fov_trace.csv",
+              "mtime_ns": 1782234231397444503,
+              "size": 4677312
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_12/DefaultParticipant_2024791658499/fov_trace.csv",
+              "mtime_ns": 1782234232990452474,
+              "size": 4674442
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:23:34.644762"
+      },
+      {
+        "id": "tds_260625_112344_2ef5",
+        "name": "S13",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202471114440331/fov_trace.csv",
+              "mtime_ns": 1782234792919644228,
+              "size": 4677063
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202471116473326/fov_trace.csv",
+              "mtime_ns": 1782234794415653480,
+              "size": 4675692
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_2024711175529201/fov_trace.csv",
+              "mtime_ns": 1782234795963663056,
+              "size": 4678148
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202475134431314/fov_trace.csv",
+              "mtime_ns": 1782234797583673080,
+              "size": 4676220
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202475162122502/fov_trace.csv",
+              "mtime_ns": 1782234799180682965,
+              "size": 4675143
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202478112546907/fov_trace.csv",
+              "mtime_ns": 1782234800838693231,
+              "size": 4675689
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_20247812824779/fov_trace.csv",
+              "mtime_ns": 1782234802503703544,
+              "size": 4675866
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_20247814426722/fov_trace.csv",
+              "mtime_ns": 1782234804112713512,
+              "size": 4676703
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202478151616239/fov_trace.csv",
+              "mtime_ns": 1782234805678723217,
+              "size": 4677882
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_20247816273044/fov_trace.csv",
+              "mtime_ns": 1782234807181732534,
+              "size": 4676987
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202479123651164/fov_trace.csv",
+              "mtime_ns": 1782234808726742114,
+              "size": 4680064
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202479151713124/fov_trace.csv",
+              "mtime_ns": 1782234810293751833,
+              "size": 4676778
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_202479155339810/fov_trace.csv",
+              "mtime_ns": 1782234811830761368,
+              "size": 4679073
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_13/DefaultParticipant_20247917044823/fov_trace.csv",
+              "mtime_ns": 1782234813358770851,
+              "size": 4675287
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:23:44.953464"
+      },
+      {
+        "id": "tds_260625_112353_e3cd",
+        "name": "S14",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_2024711144551956/fov_trace.csv",
+              "mtime_ns": 1782235374131119630,
+              "size": 4676861
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_2024711164853151/fov_trace.csv",
+              "mtime_ns": 1782235375737100883,
+              "size": 4677535
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_2024711175715966/fov_trace.csv",
+              "mtime_ns": 1782235377286082867,
+              "size": 4678033
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202475135554820/fov_trace.csv",
+              "mtime_ns": 1782235378898064184,
+              "size": 4676316
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202475162313553/fov_trace.csv",
+              "mtime_ns": 1782235380593044618,
+              "size": 4675354
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202478112734563/fov_trace.csv",
+              "mtime_ns": 1782235382298025011,
+              "size": 4676073
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202478121013244/fov_trace.csv",
+              "mtime_ns": 1782235383926006361,
+              "size": 4676266
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_20247814442276/fov_trace.csv",
+              "mtime_ns": 1782235385583987443,
+              "size": 4677839
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_20247815185639/fov_trace.csv",
+              "mtime_ns": 1782235387214968900,
+              "size": 4677277
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202478162913427/fov_trace.csv",
+              "mtime_ns": 1782235388816950756,
+              "size": 4678571
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202479123846290/fov_trace.csv",
+              "mtime_ns": 1782235390400932884,
+              "size": 4680541
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_20247915193437/fov_trace.csv",
+              "mtime_ns": 1782235391977915152,
+              "size": 4676941
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_202479155952713/fov_trace.csv",
+              "mtime_ns": 1782235393582897177,
+              "size": 4678331
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_14/DefaultParticipant_20247917232624/fov_trace.csv",
+              "mtime_ns": 1782235395254878519,
+              "size": 4674566
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:23:53.988600"
+      },
+      {
+        "id": "tds_260625_112404_a7e4",
+        "name": "S15",
+        "family": "fov",
+        "trace_path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15",
+        "fps": 30.0,
+        "units": "frames",
+        "angle_convention": "unity_zxy",
+        "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+        "reference_ply": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs/frame_1.ply",
+        "prism_dataset_id": "s4",
+        "prism_dataset_snapshot": {
+          "id": "s4",
+          "name": "S4",
+          "mpd_folder": "/mnt/storage/v3c_content/s4",
+          "mpd": "/mnt/storage/v3c_content/s4/s4.mpd",
+          "content_dir": "/mnt/storage/datasets/MazeLab_S4_Scaled_Full/Experiment_4/DefaultParticipant_202479145638575/CompletePCDs",
+          "scale_mode": "already_normalized",
+          "calibration": {
+            "mode": "already_normalized"
+          },
+          "motion_limits": {
+            "max_speed": 3.64,
+            "max_acceleration": 6.95
+          },
+          "extent_stats": null,
+          "transform": {
+            "scale": 1.0,
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "units": "meters",
+            "source": "dataset_profile",
+            "notes": "",
+            "apply_to_fov_trace": false
+          },
+          "angle_convention": "unity_zxy",
+          "apply_to_fov_trace": false,
+          "already_normalized": true,
+          "updated_at": "2026-06-09T14:46:09.793103"
+        },
+        "transform": {
+          "scale": 1.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "units": "meters",
+          "source": "dataset_profile",
+          "notes": "",
+          "apply_to_fov_trace": false
+        },
+        "motion_limits": {
+          "max_speed": 3.64,
+          "max_acceleration": 6.95
+        },
+        "fingerprint": {
+          "root": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15",
+          "files": [
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711144742482/fov_trace.csv",
+              "mtime_ns": 1782235963718532337,
+              "size": 4677446
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_2024711165040647/fov_trace.csv",
+              "mtime_ns": 1782235965333528716,
+              "size": 4676643
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202471117590794/fov_trace.csv",
+              "mtime_ns": 1782235966933525150,
+              "size": 4678226
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202475135755624/fov_trace.csv",
+              "mtime_ns": 1782235968567521531,
+              "size": 4676773
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247516250293/fov_trace.csv",
+              "mtime_ns": 1782235970189517960,
+              "size": 4676241
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202478112922396/fov_trace.csv",
+              "mtime_ns": 1782235971710514633,
+              "size": 4677862
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247812121775/fov_trace.csv",
+              "mtime_ns": 1782235973231511324,
+              "size": 4676628
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247814463237/fov_trace.csv",
+              "mtime_ns": 1782235974835507855,
+              "size": 4676649
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202478151953237/fov_trace.csv",
+              "mtime_ns": 1782235976506504266,
+              "size": 4677777
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202478163058558/fov_trace.csv",
+              "mtime_ns": 1782235978138500782,
+              "size": 4677649
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_202479152052229/fov_trace.csv",
+              "mtime_ns": 1782235979878497091,
+              "size": 4676530
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247916144751/fov_trace.csv",
+              "mtime_ns": 1782235981658493343,
+              "size": 4678168
+            },
+            {
+              "path": "/mnt/storage/datasets/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247917420648/fov_trace.csv",
+              "mtime_ns": 1782235983311052993,
+              "size": 4675586
+            }
+          ]
+        },
+        "updated_at": "2026-06-25T11:24:04.950790"
+      }
+    ],
+    "split_strategy": "manual",
+    "mixing_strategy": "equal_dataset"
+  },
+  "metrics": {
+    "epochs": [
+      {
+        "epoch": 1,
+        "train_loss": 0.8144347535239326,
+        "validation_mae": 2.2285501692030163,
+        "validation": {
+          "mae": 2.2285501692030163,
+          "mse": 22.39962673187256,
+          "smape": 0.7294126351674398,
+          "position_mae": 4.91984748840332,
+          "quaternion_angular_error_deg": 63.70262103610568
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.465034985012608,
+        "finished_at": "2026-07-23T17:12:29.699858"
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.7208457840813531,
+        "validation_mae": 2.116560604837206,
+        "validation": {
+          "mae": 2.116560604837206,
+          "mse": 20.451290448506672,
+          "smape": 0.6908343765470717,
+          "position_mae": 4.664157655504015,
+          "quaternion_angular_error_deg": 60.9514889187283
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.188410106988158,
+        "finished_at": "2026-07-23T17:12:34.914484"
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.6970591770278083,
+        "validation_mae": 2.108324156867133,
+        "validation": {
+          "mae": 2.108324156867133,
+          "mse": 20.655025800069172,
+          "smape": 0.6921075847413805,
+          "position_mae": 4.644641399383545,
+          "quaternion_angular_error_deg": 61.45743603176541
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.179858952993527,
+        "finished_at": "2026-07-23T17:12:40.120633"
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.6797284973992241,
+        "validation_mae": 2.0507310496436224,
+        "validation": {
+          "mae": 2.0507310496436224,
+          "mse": 19.644074969821506,
+          "smape": 0.6805577013227675,
+          "position_mae": 4.5154936578538685,
+          "quaternion_angular_error_deg": 59.679456075032554
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.436868180986494,
+        "finished_at": "2026-07-23T17:12:45.598024"
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.6597307867474026,
+        "validation_mae": 1.9767115513483684,
+        "validation": {
+          "mae": 1.9767115513483684,
+          "mse": 18.628763940599228,
+          "smape": 0.6738788750436571,
+          "position_mae": 4.339028226004706,
+          "quaternion_angular_error_deg": 61.66440073649088
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.113672626001062,
+        "finished_at": "2026-07-23T17:12:50.735522"
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.6553323242399428,
+        "validation_mae": 2.0467118289735584,
+        "validation": {
+          "mae": 2.0467118289735584,
+          "mse": 19.585791058010525,
+          "smape": 0.6688482430246141,
+          "position_mae": 4.505847215652466,
+          "quaternion_angular_error_deg": 59.04067611694336
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.414000129007036,
+        "finished_at": "2026-07-23T17:12:56.177771"
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.6442953626314799,
+        "validation_mae": 1.94524175590939,
+        "validation": {
+          "mae": 1.94524175590939,
+          "mse": 17.903229183620876,
+          "smape": 0.6741859912872314,
+          "position_mae": 4.267077763875325,
+          "quaternion_angular_error_deg": 58.859666188557945
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.173988617985742,
+        "finished_at": "2026-07-23T17:13:01.369318"
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.6413812650574578,
+        "validation_mae": 1.939730789926317,
+        "validation": {
+          "mae": 1.939730789926317,
+          "mse": 18.353321923149956,
+          "smape": 0.6694613562689887,
+          "position_mae": 4.254865911271837,
+          "quaternion_angular_error_deg": 57.42978159586588
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.373549912997987,
+        "finished_at": "2026-07-23T17:13:06.764586"
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.6292905330657959,
+        "validation_mae": 1.9340041610929701,
+        "validation": {
+          "mae": 1.9340041610929701,
+          "mse": 18.07738971710205,
+          "smape": 0.6617979672220018,
+          "position_mae": 4.24685533841451,
+          "quaternion_angular_error_deg": 58.92935689290365
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.148789521976141,
+        "finished_at": "2026-07-23T17:13:11.938235"
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.6202806856897142,
+        "validation_mae": 1.9246799018647935,
+        "validation": {
+          "mae": 1.9246799018647935,
+          "mse": 18.17600303226047,
+          "smape": 0.6709826257493761,
+          "position_mae": 4.214506228764852,
+          "quaternion_angular_error_deg": 59.125265757242836
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.135264775017276,
+        "finished_at": "2026-07-23T17:13:17.099782"
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.6103028270933363,
+        "validation_mae": 1.9153977632522583,
+        "validation": {
+          "mae": 1.9153977632522583,
+          "mse": 17.897470580206978,
+          "smape": 0.6620447172058953,
+          "position_mae": 4.199021021525065,
+          "quaternion_angular_error_deg": 59.051662868923614
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.40528496200568,
+        "finished_at": "2026-07-23T17:13:22.533661"
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.6145148065355089,
+        "validation_mae": 1.8878555562761095,
+        "validation": {
+          "mae": 1.8878555562761095,
+          "mse": 17.83602343665229,
+          "smape": 0.666148821512858,
+          "position_mae": 4.134075429704454,
+          "quaternion_angular_error_deg": 59.231876373291016
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.216226761986036,
+        "finished_at": "2026-07-23T17:13:27.772397"
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.6056831863191393,
+        "validation_mae": 1.902976844045851,
+        "validation": {
+          "mae": 1.902976844045851,
+          "mse": 17.62462594774034,
+          "smape": 0.668883760770162,
+          "position_mae": 4.170310179392497,
+          "quaternion_angular_error_deg": 58.96326573689779
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.299029507004889,
+        "finished_at": "2026-07-23T17:13:33.095454"
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.604977191819085,
+        "validation_mae": 1.8774651288986206,
+        "validation": {
+          "mae": 1.8774651288986206,
+          "mse": 17.36952018737793,
+          "smape": 0.674832112259335,
+          "position_mae": 4.106485472785102,
+          "quaternion_angular_error_deg": 58.86510764227973
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.238180273008766,
+        "finished_at": "2026-07-23T17:13:38.363315"
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.6052830020586649,
+        "validation_mae": 1.853477676709493,
+        "validation": {
+          "mae": 1.853477676709493,
+          "mse": 17.25815921359592,
+          "smape": 0.6596383121278551,
+          "position_mae": 4.056269592709011,
+          "quaternion_angular_error_deg": 59.18797090318468
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.452565743995365,
+        "finished_at": "2026-07-23T17:13:43.839241"
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.5999139997694227,
+        "validation_mae": 1.9112307363086276,
+        "validation": {
+          "mae": 1.9112307363086276,
+          "mse": 17.823042127821182,
+          "smape": 0.664778040515052,
+          "position_mae": 4.190833462609185,
+          "quaternion_angular_error_deg": 58.5309944152832
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.177756044024136,
+        "finished_at": "2026-07-23T17:13:49.045470"
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.5935104621781243,
+        "validation_mae": 1.9480919970406427,
+        "validation": {
+          "mae": 1.9480919970406427,
+          "mse": 18.127524375915527,
+          "smape": 0.6636908650398254,
+          "position_mae": 4.275461170408461,
+          "quaternion_angular_error_deg": 58.90923521253798
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.538020094012609,
+        "finished_at": "2026-07-23T17:13:54.605844"
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.5875581754578485,
+        "validation_mae": 1.8789307276407878,
+        "validation": {
+          "mae": 1.8789307276407878,
+          "mse": 17.530991130405003,
+          "smape": 0.6710260245535109,
+          "position_mae": 4.11057432492574,
+          "quaternion_angular_error_deg": 58.51317469278971
+        },
+        "learning_rate": 0.001,
+        "elapsed_s": 5.200544102001004,
+        "finished_at": "2026-07-23T17:13:59.826350"
+      }
+    ],
+    "test": {
+      "mae": 1.8567028194665909,
+      "mse": 17.586881279945374,
+      "smape": 0.6727950647473335,
+      "position_mae": 4.053664565086365,
+      "quaternion_angular_error_deg": 64.84898281097412,
+      "evaluated_at": "2026-07-23T17:14:01.914264"
+    },
+    "resources": [
+      {
+        "epoch": 1,
+        "max_rss_kb": 2182312,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 2,
+        "max_rss_kb": 2182312,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 3,
+        "max_rss_kb": 2182704,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 4,
+        "max_rss_kb": 2183088,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 5,
+        "max_rss_kb": 2185388,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 6,
+        "max_rss_kb": 2185416,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 7,
+        "max_rss_kb": 2185416,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 8,
+        "max_rss_kb": 2185424,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 9,
+        "max_rss_kb": 2185424,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 10,
+        "max_rss_kb": 2185468,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 11,
+        "max_rss_kb": 2185488,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 12,
+        "max_rss_kb": 2185488,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 13,
+        "max_rss_kb": 2185652,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 14,
+        "max_rss_kb": 2185872,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 15,
+        "max_rss_kb": 2185872,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 16,
+        "max_rss_kb": 2185872,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 17,
+        "max_rss_kb": 2185872,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      },
+      {
+        "epoch": 18,
+        "max_rss_kb": 2185872,
+        "cuda_allocated_bytes": 17747968,
+        "cuda_reserved_bytes": 25165824
+      }
+    ]
+  },
+  "checkpoint": "/home/jeremy/Documents/python_workspace/prism/src/../results/training/models/model_260723_171401_5ca2/model.pt",
+  "created_at": "2026-07-23T17:14:01.917905",
+  "exported": false
+}

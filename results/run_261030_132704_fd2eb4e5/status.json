@@ -1,0 +1,64 @@
+{
+  "run_id": "run_261030_132704_fd2eb4e5",
+  "status": "finished",
+  "error": null,
+  "cancel_requested": false,
+  "navis_export": null,
+  "fov_comparison": {
+    "data_path": null,
+    "video_path": null
+  },
+  "queued_at": "2026-10-30T13:27:04.356504",
+  "started": "2026-10-30T20:01:49.677452",
+  "finished": "2026-10-31T00:57:14.052295",
+  "attempt": 1,
+  "events_path": "/api/runs/run_261030_132704_fd2eb4e5/events",
+  "log_path": "/results/run_261030_132704_fd2eb4e5/run_261030_132704_fd2eb4e5.log",
+  "predictor_diagnostics_path": "/results/run_261030_132704_fd2eb4e5/predictor_diagnostics.json",
+  "artifact_fingerprint": {
+    "config.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_261030_132704_fd2eb4e5/config.json",
+      "mtime_ns": 1793405688221552918,
+      "size": 2419
+    },
+    "status.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_261030_132704_fd2eb4e5/status.json",
+      "mtime_ns": 1793422015547606668,
+      "size": 2314
+    },
+    "events.json": {
+      "path": "/home/jeremy/Documents/python_workspace/prism/src/../results/run_261030_132704_fd2eb4e5/events.json.gz",
+      "mtime_ns": 1793422007217627133,
+      "size": 610467
+    }
+  },
+  "config_summary": {
+    "abr": "CoverageAwareUtilityABR",
+    "predictor": "TrainedFovPredictor",
+    "bandwidth_predictor": "GroundTruthBandwidthPredictor",
+    "network_profile": "paper_wifi_55",
+    "network_trace": "",
+    "fov_trace": "/home/jeremy/Documents/python_workspace/prism/data/fov_traces/mazelab_fov_traces_verified/Experiment_15/DefaultParticipant_20247917420648/fov_trace.csv",
+    "ground_truth_mode": "visible_fraction",
+    "oracle_mode": "none"
+  },
+  "progress": {
+    "current": 18,
+    "total": 18,
+    "group_id": "group_run_261030_132700_9dac7f0d",
+    "group_size": 546,
+    "phase": "finished",
+    "detail": {
+      "recovered": true,
+      "reason": "Completion marker verified after server restart."
+    },
+    "phase_started_at": "2026-10-31T00:57:14.049578",
+    "heartbeat_at": "2026-10-31T00:57:14.049578"
+  },
+  "oracle_mode": "none",
+  "oracle_group_id": null,
+  "baseline_run_id": null,
+  "run_group_id": "paper_baselines_coverageaware_bandwidthqoe_sixrates_mvv8vhux",
+  "run_group_name": "Paper_Baselines_CoverageAware_BandwidthQoE_SixRates",
+  "run_group_source": "batch_plan"
+}
